@@ -2,9 +2,10 @@
 layout: post
 title: "On Creating Content"
 tags: [meta]
-author: Brandon
+author: brandon
 feature-img: "assets/img/feature-img/creating-content.jpg"
 thumbnail: "assets/img/feature-img/creating-content.jpg"
+permalink: /on-creating-content/
 ---
 
 Post coming soon!
