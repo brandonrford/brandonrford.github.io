@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Licenses and Copyright"
+permalink: /licenses/
+hide: true
+---
+
 This site utilizes the [Type on Strap](https://sylhare.github.io/Type-on-Strap/) theme for [Jekyll](https://jekyllrb.com), and it is licensed under the MIT license:
 
 MIT License
