@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "/"
-url: "https://brandonrford.github.io"
+url: "https://brandonsvoid.com"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Brandon's Void                                # site's title
@@ -22,10 +22,10 @@ color_image: /assets/img/lineart.png                    # A bit transparent for 
 # Features
 # More in the _data folder for share buttons, author and language
 # For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
-katex: false                                             # Enable if using math markup
-mermaid: false                                           # Enable mermaid-js for sequence and diagrams
-google_analytics:                                       # Tracking ID, e.g. "UA-000000-01"
-cookie_consent: false                                   # To respect the usage of cookies
+katex:                                              # Enable if using math markup
+mermaid:                                            # Enable mermaid-js for sequence and diagrams
+google_analytics: G-WZ4J8H6Q3N                                      # Tracking ID, e.g. "UA-000000-01"
+cookie_consent: true                                   # To respect the usage of cookies
 color_theme: dark                                       # auto, dark or light
 
 # PAGINATION

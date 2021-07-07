@@ -34,7 +34,8 @@ The content I've written on this site is licensed under a [Creative Commons Attr
 Any other attribution will be listed down below or on their respective pages.
 
 Header images:
-* [The header image for the homepage](https://pixabay.com/photos/moon-sea-full-moon-2762111/) was taken by Pixabay user [photo-graphe](https://pixabay.com/users/photo-graphe-2867425/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/). 
-* [The header image for the about page](https://pixabay.com/photos/francis-quadrangle-1618326/) was taken by Pixabay user [12019](https://pixabay.com/users/12019-12019/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/).
-* [The header image for the search page](https://pixabay.com/photos/binoculars-looking-man-discovery-1209011/) was taken by Pixabay user [Free-Photos](https://pixabay.com/users/free-photos-242387/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/).
+* [The header image for the homepage](https://pixabay.com/photos/moon-sea-full-moon-2762111/) was created by Pixabay user [photo-graphe](https://pixabay.com/users/photo-graphe-2867425/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/). 
+* [The header image for the about page](https://pixabay.com/photos/francis-quadrangle-1618326/) was created by Pixabay user [12019](https://pixabay.com/users/12019-12019/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/).
+* [The header image for the search page](https://pixabay.com/photos/binoculars-looking-man-discovery-1209011/) was created by Pixabay user [Free-Photos](https://pixabay.com/users/free-photos-242387/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/).
+* [The header image for the sitemap page](https://pixabay.com/photos/earth-world-map-continents-land-11595/) was created by Pixabay user [WikiImages](https://pixabay.com/users/wikiimages-1897/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/).
 * [The favicon and nav icon](https://pixabay.com/photos/full-moon-night-sky-luna-moon-1869760/) was created by Pixabay user [Pexels](https://pixabay.com/users/pexels-2286921/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/). It has been modified by me.

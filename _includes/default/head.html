@@ -54,14 +54,14 @@
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
-      const cookieName = 'cookie-notice-dismissed-{{ site.url }}';
-      const isCookieConsent = '{{ site.cookie_consent }}';
-      const analyticsName = '{{ site.google_analytics }}';
+        const cookieName = 'cookie-notice-dismissed-{{ site.url }}';
+        const isCookieConsent = '{{ site.cookie_consent }}';
+        const analyticsName = '{{ site.google_analytics }}';
     </script>
 
     {% if site.cookie_consent %}
-        <span id="cookie-notice"><span>{{ site.data.language.str_cookie_disclaimer | default: "We would like to use third party cookies and scripts to improve the functionality of this website." }}
-          </span><a id="cookie-notice-accept" class="button">{{ site.data.language.str_cookie_approve | default: "Approve" }}</a>
+        <span id="cookie-notice"><span>This site uses cookies for analytics and advertising purposes. To learn more, <a href="/privacy/">please read the Privacy Policy</a>. This notice will appear again after 31 days.
+          </span><a id="cookie-notice-accept" class="button">Approve</a><a id="cookie-notice-decline" class="button">Decline</a>
         </span>
     {% endif %}
     {% if site.google_analytics %}
@@ -69,6 +69,8 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
         <!-- Page analysis (analytics.js) -->
         <script async src='https://www.google-analytics.com/analytics.js'></script>
+        <!-- AdSense -->
+        <script data-ad-client="ca-pub-8390439825109007" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     {% endif %}
 
     <!-- seo tags -->
