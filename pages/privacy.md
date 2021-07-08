@@ -3,11 +3,12 @@ layout: page
 title: "Privacy Policy and Cookie Policy"
 permalink: /privacy/
 hide: true
+date: 2021-07-07
 ---
 
 ## Introduction
 
-As a privacy-minded person myself, I want to ensure the maximum privacy I can for anyone who uses my site. That means, you are free to opt out of almost everything on this site. I will delve later into mandatory cookies, but aside from those, everything else it totally optional. This privacy policy is designed to protect and inform you. It will detail your rights as a consumer of the Brandon's Void website.
+As a privacy-minded person myself, I want to ensure the maximum privacy I can for anyone who uses my site. That means you are free to opt out of almost everything on this site. I will delve later into mandatory cookies, but aside from those, everything else is totally optional. This privacy policy is designed to protect and inform you. It will detail your rights as a consumer of the Brandon's Void website.
 
 This privacy policy applies to all links and subdomains of the Brandon's Void website (https://brandonsvoid.com). Any time I refer to the site, I am referring to the Brandoin's Void website and all its links and subdomains. When I use first-person terms such as "I" or "me," I am referring to myself, Brandon Ford, the owner and administrator of the Brandon's Void website.
 
@@ -30,7 +31,7 @@ Using the provided links, you may opt out of advertising from these third-party 
 
 ## Legal Basis for Collecting Information
 
-My legal basis for collecting this information is necessity and consent, and necessity only applies to a very minute amount of the cookies the Site collects. If you do not want to be tracked, please visit the provided links, and please opt-out of cookies on this site. If you revoke your consent, the Site cannot and will not track you.
+My legal basis for collecting this information is necessity and consent, and necessity only applies to a very minute amount of the cookies the Site collects. If you do not want to be tracked, please visit the provided links, and please opt-out of cookies on this site. If you revoke your consent, the Site will only use the required cookies and serve non-personalized advertisements.
 
 ## Disclosure of Information
 
@@ -88,3 +89,5 @@ Advertising and Analytic cookies will not be collected without your consent. Occ
 ## Conclusion
 
 Thank you for taking the time to read this privacy policy and understand your rights. It is critical to preserve our privacy and understand what rights we have as consumers and duties we have as administrators. Please, feel free to contact me with any questions at brandon@brandonsvoid.com.
+
+Last Updated: {{ page.date | date: '%B %d, %Y' }}

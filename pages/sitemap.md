@@ -12,6 +12,7 @@ Main Pages:
 * [Licenses](/license/)
 * [Search](/search/)
 * [Tags](/tags/)
+* [Privacy and Cookie Policy](/privacy/)
 * [Sitemap](/sitemap/) (you are here)
 
 Blog Posts:
