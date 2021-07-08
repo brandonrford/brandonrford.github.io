@@ -4,3 +4,4 @@ Disallow: /search
 Disallow: /sitemap
 Disallow: /tags
 Disallow: /licenses
+Disallow: /privacy
