@@ -20,6 +20,8 @@ Advertising and Analytics information is collected automatically by the Google A
 
 Google Analytics allows the Site to collect information that helps me understand how users use my site. This information includes: the time you visited, what pages you visited, the time spent on each page you visited, how you came onto the site (such as via a direct link or Google search), what type of web browser you used, what type of operating system (OS) you used, whether or not you have JavaScript enabled, what your screen resolution and color are, and finally, your network location and IP address.
 
+For users signed into their Google accounts, additional information will be collected. This  information may include end user location, search history, YouTube history, and data from sites that partner with Google.
+
 Google AdSense serves advertisements. It uses cookies, strings of information affiliated with your browser, to serve ads based on prior visits to the Site and other websites. The use of advertising cookies allows Google and its partners to serve ads to you based on your visit to the Site and other sites on the internet. You can opt out of this advertising by declining the messages that first appear when you visit the site. You may also opt out of personalized advertising by visitng [Google Ad Settings](https://adssettings.google.com). You can also opt out of a third-party vendor's use of cookies for personalized advertising by visiting [www.aboutads.info](https://optout.aboutads.info/?c=2&lang=EN). In addition, many browsers offer privacy options to prevent the use of cookies by advertisers and others.
 
 In addition to Google AdSense, the Site uses third-party vendors and ad networks. You can find lists of those vendors at the following links:
