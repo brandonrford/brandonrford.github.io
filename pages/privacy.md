@@ -3,14 +3,14 @@ layout: page
 title: "Privacy Policy and Cookie Policy"
 permalink: /privacy/
 hide: true
-date: 2021-07-07
+date: 2021-07-08
 ---
 
 ## Introduction
 
 As a privacy-minded person myself, I want to ensure the maximum privacy I can for anyone who uses my site. That means you are free to opt out of almost everything on this site. I will delve later into mandatory cookies, but aside from those, everything else is totally optional. This privacy policy is designed to protect and inform you. It will detail your rights as a consumer of the Brandon's Void website.
 
-This privacy policy applies to all links and subdomains of the Brandon's Void website (https://brandonsvoid.com). Any time I refer to the site, I am referring to the Brandoin's Void website and all its links and subdomains. When I use first-person terms such as "I" or "me," I am referring to myself, Brandon Ford, the owner and administrator of the Brandon's Void website.
+This privacy policy applies to all links and subdomains of the Brandon's Void website [https://brandonsvoid.com](https://brandonsvoid.com). Any time I refer to the site, I am referring to the Brandon's Void website and all its links and subdomains. When I use first-person terms such as "I" or "me," I am referring to myself, Brandon Ford, the owner and administrator of the Brandon's Void website.
 
 ## Information Collected
 
@@ -22,7 +22,7 @@ Google Analytics allows the Site to collect information that helps me understand
 
 For users signed into their Google accounts, additional information will be collected. This  information may include end user location, search history, YouTube history, and data from sites that partner with Google.
 
-Google AdSense serves advertisements. It uses cookies, strings of information affiliated with your browser, to serve ads based on prior visits to the Site and other websites. The use of advertising cookies allows Google and its partners to serve ads to you based on your visit to the Site and other sites on the internet. You can opt out of this advertising by declining the messages that first appear when you visit the site. You may also opt out of personalized advertising by visitng [Google Ad Settings](https://adssettings.google.com). You can also opt out of a third-party vendor's use of cookies for personalized advertising by visiting [www.aboutads.info](https://optout.aboutads.info/?c=2&lang=EN). In addition, many browsers offer privacy options to prevent the use of cookies by advertisers and others.
+Google AdSense serves advertisements. It uses cookies, strings of information affiliated with your browser, to serve ads based on prior visits to the Site and other websites. The use of advertising cookies allows Google and its partners to serve ads to you based on your visit to the Site and other sites on the internet. You can opt out of this advertising by declining the messages that first appear when you visit the site. You may also opt out of personalized advertising by visiting [Google Ad Settings](https://adssettings.google.com). You can also opt out of a third-party vendor's use of cookies for personalized advertising by visiting [www.aboutads.info](https://optout.aboutads.info/?c=2&lang=EN). In addition, many browsers offer privacy options to prevent the use of cookies by advertisers and others.
 
 In addition to Google AdSense, the Site uses third-party vendors and ad networks. You can find lists of those vendors at the following links:
 
@@ -46,11 +46,12 @@ I may also disclose information as required by the law. This means I may share i
 Information collected by the Site is deleted in a timely manner. Any information manually sent will be deleted as soon as the matter is resolved. Any information automatically collected is kept for two (2) months and then deleted. You can request your data be purged at any time, and to comply with California law, a page will be provided showing the number of purge requests from California residents. To submit a purge request, please contact me at brandon@brandonsvoid.com
 
 ## Privacy Policy Changes
+
 Occasionally I may change this Privacy Policy. You will be notified of these changes.
 
 ## Cookie Policy
 
-Cookies are small pieces of data stored on your computer or device as text files and loaded into your browser. They are used to remember you and your preferences. For example, there is only one required cookie needed for you to use the Site. That is the cookie that stores your cookie preferences. Without this cookie, it would be impossible to follow the law. So, the Site collects this information and keeps it stored for 31 days. This cookie is identified as "cookie-notice-dismissed-bradonsvoid.com".
+Cookies are small pieces of data stored on your computer or device as text files and loaded into your browser. They are used to remember you and your preferences. For example, there is only a few required cookies needed for you to use the Site. The first one is the cookie that stores your cookie preferences on my side. Without this cookie, it would be impossible to follow the law. So, the Site collects this information and keeps it stored for 31 days. This cookie is identified as "cookie-notice-dismissed-bradonsvoid.com". Then, there a couple of cookies Google uses on their side to store your decision. Like the cookie for my side, Google's cookies are also necessary for compliance with the law and are thus mandatory.
 
 Analytics and advertising also use cookies. These cookies are optional.
 
@@ -73,12 +74,12 @@ For more information on the cookies used by Google AdSense, please visit [the ad
 
 ## Analytics Cookies
 
-The following information is taken from Google Anlytics' article "Cookie Usage on Websites", available [at the following link](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage).
+The following information is taken from Google Analytics' article "Cookie Usage on Websites", available [at the following link](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage).
 
 Google Analytics uses the following cookies:
 
 * _ga, lasts 2 years, used to distinguish users.
-* _gid, lasts 24 hours, used to dinstguish users.
+* _gid, lasts 24 hours, used to distinguish users.
 * &#x5f;ga&#x5f;&#60;container-id&#62;, lasts 2 years, used to persist session state.
 * &#x5f;gac&#x5f;gb&#x5f;&#60;container-id&#62;, lasts 90 days, contains campaign related information.
 * _gat, lasts 1 minute, used to throttle request rate.

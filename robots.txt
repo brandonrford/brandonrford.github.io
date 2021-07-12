@@ -1,7 +1,6 @@
 User-agent: *
 Disallow: /404
 Disallow: /search
-Disallow: /sitemap
 Disallow: /tags
 Disallow: /licenses
 Disallow: /privacy
