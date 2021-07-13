@@ -26,4 +26,4 @@ Hopefully, I use this site for its intended purpose, and I really want to be con
 
 Attributions:
 
-* [The header image for this article](https://pixabay.com/photos/youtuber-blogger-screenwriter-2838945/) was created by Pixabay user [lukasbieri](https://pixabay.com/users/lukasbieri-4664461/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/).
+* [The header image for this article](https://pixabay.com/photos/youtuber-blogger-screenwriter-2838945/) was created by Pixabay user [lukasbieri](https://pixabay.com/users/lukasbieri-4664461/), and is licensed under the [Pixabay license](https://pixabay.com/service/license/).
