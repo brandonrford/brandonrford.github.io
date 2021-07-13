@@ -3,9 +3,9 @@ layout: post
 title: "On Creating Content"
 tags: [meta]
 author: brandon
-feature-img: "assets/img/feature-img/creating-content.jp2"
-thumbnail: "assets/img/feature-img/creating-content.jp2"
-image: "assets/img/feature-img/creating-content.jp2"
+feature-img: "assets/img/feature-img/creating-content.jpg"
+thumbnail: "assets/img/feature-img/creating-content.jpg"
+image: "assets/img/feature-img/creating-content.jpg"
 permalink: /on-creating-content/
 description: "Why do I keep trying to create? This blog post is me trying to figure that out."
 ---

@@ -2,8 +2,8 @@
 layout: page
 title: About
 permalink: /about/
-feature-img: "assets/img/about.jp2"
-image: "assets/img/about.jp2"
+feature-img: "assets/img/about.jpg"
+image: "assets/img/about.jpg"
 description: "Here you can learn all about me!"
 ---
 
