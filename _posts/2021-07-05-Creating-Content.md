@@ -3,8 +3,9 @@ layout: post
 title: "On Creating Content"
 tags: [meta]
 author: brandon
-feature-img: "assets/img/feature-img/creating-content.jpg"
-thumbnail: "assets/img/feature-img/creating-content.jpg"
+feature-img: "assets/img/feature-img/creating-content.jp2"
+thumbnail: "assets/img/feature-img/creating-content.jp2"
+image: "assets/img/feature-img/creating-content.jp2"
 permalink: /on-creating-content/
 ---
 

@@ -2,7 +2,7 @@
 layout: page
 title: "Sitemap"
 permalink: /sitemap/
-feature-img: "assets/img/map.jpg"
+feature-img: "assets/img/map.jp2"
 hide: true
 ---
 

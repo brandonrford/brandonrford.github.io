@@ -1,4 +1,6 @@
 brandon: # author-id
-  name: "Brandon"
-  avatar: "assets/img/profile.png"
-  url: "https://brandonsvoid.com"
+  name: "Brandon Ford"
+  picture: assets/img/profile.webp
+  twitter: BrandonFordMO
+  avatar: assets/img/profile.webp
+  url: https://brandonsvoid.com
