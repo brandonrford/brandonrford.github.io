@@ -7,6 +7,7 @@ feature-img: "assets/img/feature-img/creating-content.jp2"
 thumbnail: "assets/img/feature-img/creating-content.jp2"
 image: "assets/img/feature-img/creating-content.jp2"
 permalink: /on-creating-content/
+description: "Why do I keep trying to create? This blog post is me trying to figure that out."
 ---
 
 I talked about this on my [About](/about/) page, but I also wanted to delve into this in my first post on this site. If you're visiting this blog and you know me, then you'll also know I've had many, MANY blogs before it. Well, that's a bit of an exaggeration, but I have tried maintaining a blog several times before this current one. I always fail, and I always end up going months and months between posts. Well, on this iteration of myself blogging, I'm considering that a-okay. I may upload multiple times a day or only a few times a year, and you know what? It doesn't really matter to me.

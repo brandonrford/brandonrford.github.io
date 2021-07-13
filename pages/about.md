@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 feature-img: "assets/img/about.jp2"
 image: "assets/img/about.jp2"
+description: "Here you can learn all about me!"
 ---
 
 Hello! My name is Brandon and welcome to my journal. Overtime I've come to realize I really like writing, and I want to write more. However, most of my attempts at writing are always squandered by worrying about an audience and who's reading it or whatever. I've decided to not care about that anymore. I'm dropping all thoughts about anyone reading this. This is my journal that just happens to be publicly accessible on the internet. If someone comes across it and reads some posts, great! If not, I don't care. The main point of this blog is to write for myself, everything else is secondary.
