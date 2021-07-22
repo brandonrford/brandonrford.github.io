@@ -11,7 +11,7 @@ description: "You always hear about the girls who are not like other girls, but 
 excerpt_separator: <!--more-->
 ---
 
-## Introduction
+## Introduction&nbsp;
 
 I feel like there comes a time in everyone’s life where they have to feel unique in some way. Me personally, I think I expressed my “uniqueness” by being gay. Yes, I’m being serious. While obviously I didn’t choose to be gay so I could be unique, I did make being gay part of my personality, so it set me apart from my other peers. Nowadays, this isn’t so much the case. I don’t care about being unique anymore, really. I just like being me, and according to my friends, they like that too (though, my anxiety makes me unsure of how much I can trust them lol. Anyway, I say all of this because I think it’s important that the phenomenon, I’m about to talk about is NOT unique to a group of people. It’s just a manifestation of a struggle that’s been going on since teenage subcultures were a thing. This is not meant to be a judgy article, rather it’s meant to be an understanding one.
 <!--more-->
