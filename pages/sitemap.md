@@ -22,8 +22,8 @@ Main Pages:
 
 * [Sitemap](/sitemap/) (you are here)
 
-Blog Posts:
-{% for post in site.posts %}
+Blog Posts (chronological order):
+{% for post in site.posts reversed %}
 
 * [{{ post.title }}]({{ post.url }})
 
