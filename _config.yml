@@ -7,7 +7,11 @@ title: Brandon's Void                                # site's title
 tagline: "Come on in"
 description: "This is my own personal void that I like screaming into. Visit if you'd like to listen in."      # used by search engines
 avatar: assets/img/moon_icon.webp                        # Empty for no avatar in navbar
-favicon: assets/favicon.ico                             # Icon displayed in the tab
+favicon: assets/img/icons/favicon.ico
+appleicon: assets/img/icons/appleicon.png
+# Icons
+manifest: /manifest.json
+# Manifest
 
 #Jekyll SEO stuff
 twitter:

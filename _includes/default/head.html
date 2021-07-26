@@ -15,6 +15,9 @@
     </script>
     {% endif %}
 
+    <!--Theme-->
+    <meta name="theme-color" content="#22272e">
+
     <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
     <script defer src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
     
@@ -23,6 +26,10 @@
 
     <!--Favicon-->
     <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ site.appleicon | relative_url }}">
+
+    <!--Manifest-->
+    <link rel="manifest" href="{{ "manifest.json" | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- RSS -->
     <link rel="alternate" type="application/atom+xml" title="{{ site.title | default: 'Title' }}" href="{{ 'feed.xml' | absolute_url }}"/>

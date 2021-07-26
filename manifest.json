@@ -1,0 +1,38 @@
+{
+    "dir": "ltr",
+    "lang": "en-US",
+    "name": "Brandon's Void",
+    "short_name": "Brandon's Void",
+    "start_url": "https://brandonsvoid.com",
+    "display": "browser",
+    "scope": "/",
+    "background_color": "#22272e",
+    "theme_color": "#22272e",
+    "description": "This is my own personal void that I like screaming into. Visit if you'd like to listen in.",
+    "categories": ["politics","education"],
+    "icons": [{
+      "src": "assets/img/icons/moonicon48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }, {
+      "src": "assets/img/icons/moonicon72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }, {
+      "src": "assets/img/icons/moonicon96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }, {
+      "src": "assets/img/icons/moonicon144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "assets/img/icons/moonicon168.png",
+      "sizes": "168x168",
+      "type": "image/png"
+    }, {
+      "src": "assets/img/icons/moonicon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }]
+  }
