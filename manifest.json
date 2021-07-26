@@ -4,7 +4,7 @@
     "name": "Brandon's Void",
     "short_name": "Brandon's Void",
     "start_url": "https://brandonsvoid.com",
-    "display": "browser",
+    "display": "minimal-ui",
     "scope": "/",
     "background_color": "#22272e",
     "theme_color": "#22272e",
@@ -33,6 +33,11 @@
     }, {
       "src": "assets/img/icons/moonicon192.png",
       "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }, {
+      "src": "assets/img/icons/moonicon512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }]
   }
