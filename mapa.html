@@ -1,0 +1,3753 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ee365ae0243444999a0a6b649621f94b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ee365ae0243444999a0a6b649621f94b" ></div>
+        
+    
+<div style="
+    position: fixed;
+    bottom: 320px;
+    left: 75px;
+    width: 200px;
+    height: 250px;
+    z-index:9999;
+    font-size:14px;
+    ">
+    <p><a><img src="https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png" alt="Small Species Icon" width="25" height="25"></a>&emsp;Small Species</p>
+    <p><a><img src="https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png" alt="Pigs Icon" width="25" height="25"></a>&emsp;Pigs</p>
+    <p><a><img src="https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png" alt="Oves Icon" width="25" height="25"></a>&emsp;Oves</p>
+    <p><a><img src="https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/horse.png" alt="Equines Icon" width="25" height="25"></a>&emsp;Equines</p>
+    <p><a><img src="https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/reindeer.png" alt="Reindeer Icon" width="25" height="25"></a>&emsp;Reindeer</p>
+    <p><a><img src="https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/camel.png" alt="Camels Icon" width="25" height="25"></a>&emsp;Camels</p>
+    <p><a><img src="https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png" alt="Bovines Icon" width="25" height="25"></a>&emsp;Bovines</p>
+</div>
+<div style="
+    position: fixed;
+    bottom: 300px;
+    left: 50px;
+    width: 180px;
+    height: 300px;
+    z-index:9998;
+    font-size:14px;
+    background-color: #ffffff;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    opacity: 0.7;
+    ">
+</div>
+</body>
+<script>    
+    
+            var map_ee365ae0243444999a0a6b649621f94b = L.map(
+                "map_ee365ae0243444999a0a6b649621f94b",
+                {
+                    center: [10.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_db9d2320cea540a984df9773319599d2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+            var marker_9d7b99eed90142ff980fdc4e7b5b6ea2 = L.marker(
+                [7.34138, 134.476678],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_4fecd8aee9154625b6cc669bbba603db = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_9d7b99eed90142ff980fdc4e7b5b6ea2.setIcon(custom_icon_4fecd8aee9154625b6cc669bbba603db);
+        
+    
+        var popup_b5c03c5c8f6849d7bfcc687cdf40708e = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_92ada40b6dde424f8be2e7f29c07d140 = $(`<div id="html_92ada40b6dde424f8be2e7f29c07d140" style="width: 100.0%; height: 100.0%;">Focal Year: 1947<br>Role of Gods: Absent<br>Animals Hunted: Birds or Waterfowl<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_b5c03c5c8f6849d7bfcc687cdf40708e.setContent(html_92ada40b6dde424f8be2e7f29c07d140);
+        
+
+        marker_9d7b99eed90142ff980fdc4e7b5b6ea2.bindPopup(popup_b5c03c5c8f6849d7bfcc687cdf40708e)
+        ;
+
+        
+    
+    
+            marker_9d7b99eed90142ff980fdc4e7b5b6ea2.bindTooltip(
+                `<div>
+                     Palauans
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3953d5ded71d4c118475a3634cf97867 = L.marker(
+                [43.633654, 142.46167],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_61628605c31d489a8d96886b2a54b62a = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_3953d5ded71d4c118475a3634cf97867.setIcon(custom_icon_61628605c31d489a8d96886b2a54b62a);
+        
+    
+        var popup_c0628d2ede254a359ad43ccc96b16c65 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_6821b12b4fdc4cd3b7cf7b0836a7f435 = $(`<div id="html_6821b12b4fdc4cd3b7cf7b0836a7f435" style="width: 100.0%; height: 100.0%;">Focal Year: 1880<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_c0628d2ede254a359ad43ccc96b16c65.setContent(html_6821b12b4fdc4cd3b7cf7b0836a7f435);
+        
+
+        marker_3953d5ded71d4c118475a3634cf97867.bindPopup(popup_c0628d2ede254a359ad43ccc96b16c65)
+        ;
+
+        
+    
+    
+            marker_3953d5ded71d4c118475a3634cf97867.bindTooltip(
+                `<div>
+                     Ainu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8677f2f2b3714587b6b4b7c9c0f13779 = L.marker(
+                [52.59, 140.681],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_ffbf67673f6742c2a6eae2bfa74f53d1 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_8677f2f2b3714587b6b4b7c9c0f13779.setIcon(custom_icon_ffbf67673f6742c2a6eae2bfa74f53d1);
+        
+    
+        var popup_79edda4c2da946d58572c1feb60ef930 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_95ccff10445c4c58b723046d63dc4093 = $(`<div id="html_95ccff10445c4c58b723046d63dc4093" style="width: 100.0%; height: 100.0%;">Focal Year: 1890<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_79edda4c2da946d58572c1feb60ef930.setContent(html_95ccff10445c4c58b723046d63dc4093);
+        
+
+        marker_8677f2f2b3714587b6b4b7c9c0f13779.bindPopup(popup_79edda4c2da946d58572c1feb60ef930)
+        ;
+
+        
+    
+    
+            marker_8677f2f2b3714587b6b4b7c9c0f13779.bindTooltip(
+                `<div>
+                     Nivkh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4184998c1df440ba8854b61719b67acd = L.marker(
+                [62.0697, -160.044],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_200b02990d694b6a9a661d8f5fd4d31e = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_4184998c1df440ba8854b61719b67acd.setIcon(custom_icon_200b02990d694b6a9a661d8f5fd4d31e);
+        
+    
+        var popup_8442b59afede4b0a8afe599d56605f0f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_a7deb6fe56964359820a2f546a772385 = $(`<div id="html_a7deb6fe56964359820a2f546a772385" style="width: 100.0%; height: 100.0%;">Focal Year: 1885<br>Role of Gods: Otiose<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_8442b59afede4b0a8afe599d56605f0f.setContent(html_a7deb6fe56964359820a2f546a772385);
+        
+
+        marker_4184998c1df440ba8854b61719b67acd.bindPopup(popup_8442b59afede4b0a8afe599d56605f0f)
+        ;
+
+        
+    
+    
+            marker_4184998c1df440ba8854b61719b67acd.bindTooltip(
+                `<div>
+                     Deg Xit'an
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbb4c3ff681c4df78b84f2ecda90c738 = L.marker(
+                [49.0533, -68.7376],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_090cec5a201b4e0db2aea43fbac3df81 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_bbb4c3ff681c4df78b84f2ecda90c738.setIcon(custom_icon_090cec5a201b4e0db2aea43fbac3df81);
+        
+    
+        var popup_31553a3cce744055b8649b9a13f18e2f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_478e89a8140b44a2af76ca8d4bf662f0 = $(`<div id="html_478e89a8140b44a2af76ca8d4bf662f0" style="width: 100.0%; height: 100.0%;">Focal Year: 1910<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_31553a3cce744055b8649b9a13f18e2f.setContent(html_478e89a8140b44a2af76ca8d4bf662f0);
+        
+
+        marker_bbb4c3ff681c4df78b84f2ecda90c738.bindPopup(popup_31553a3cce744055b8649b9a13f18e2f)
+        ;
+
+        
+    
+    
+            marker_bbb4c3ff681c4df78b84f2ecda90c738.bindTooltip(
+                `<div>
+                     Montagnais
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_300cd910b228491dbb2972a4e11a024b = L.marker(
+                [45.9941, -65.5766],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_e83bad4c396d442c9b55207772b93dee = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_300cd910b228491dbb2972a4e11a024b.setIcon(custom_icon_e83bad4c396d442c9b55207772b93dee);
+        
+    
+        var popup_eff6616b5a1944d799bdf4db08f0b7b2 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_6e67a26381f5425d82e9155380d9517d = $(`<div id="html_6e67a26381f5425d82e9155380d9517d" style="width: 100.0%; height: 100.0%;">Focal Year: 1650<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_eff6616b5a1944d799bdf4db08f0b7b2.setContent(html_6e67a26381f5425d82e9155380d9517d);
+        
+
+        marker_300cd910b228491dbb2972a4e11a024b.bindPopup(popup_eff6616b5a1944d799bdf4db08f0b7b2)
+        ;
+
+        
+    
+    
+            marker_300cd910b228491dbb2972a4e11a024b.bindTooltip(
+                `<div>
+                     Mi'kmaq
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c77a78e09aac418988d385284e189d64 = L.marker(
+                [59.8794, -117.047],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_f6a35485b5c843e79b415851b18d32a6 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_c77a78e09aac418988d385284e189d64.setIcon(custom_icon_f6a35485b5c843e79b415851b18d32a6);
+        
+    
+        var popup_d19e611eedd347b9942ca11806a4417d = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_7abf4f6f529c45b88d151f861574ed8a = $(`<div id="html_7abf4f6f529c45b88d151f861574ed8a" style="width: 100.0%; height: 100.0%;">Focal Year: 1940<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_d19e611eedd347b9942ca11806a4417d.setContent(html_7abf4f6f529c45b88d151f861574ed8a);
+        
+
+        marker_c77a78e09aac418988d385284e189d64.bindPopup(popup_d19e611eedd347b9942ca11806a4417d)
+        ;
+
+        
+    
+    
+            marker_c77a78e09aac418988d385284e189d64.bindTooltip(
+                `<div>
+                     DeneTha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7afd27828f14b39960adb5b5e101ccd = L.marker(
+                [61.9942, -132.412],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_15ac415555be48e3ab35521c31d8e8e5 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_d7afd27828f14b39960adb5b5e101ccd.setIcon(custom_icon_15ac415555be48e3ab35521c31d8e8e5);
+        
+    
+        var popup_45dabfd2195145d4aea0db70adf4cac4 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_dffb30c70b7e49e7b0600500c9b82dd2 = $(`<div id="html_dffb30c70b7e49e7b0600500c9b82dd2" style="width: 100.0%; height: 100.0%;">Focal Year: 1900<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_45dabfd2195145d4aea0db70adf4cac4.setContent(html_dffb30c70b7e49e7b0600500c9b82dd2);
+        
+
+        marker_d7afd27828f14b39960adb5b5e101ccd.bindPopup(popup_45dabfd2195145d4aea0db70adf4cac4)
+        ;
+
+        
+    
+    
+            marker_d7afd27828f14b39960adb5b5e101ccd.bindTooltip(
+                `<div>
+                     Kaska
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6476a4d22f7644628cff6b2f88c6b343 = L.marker(
+                [1.16839, 28.7626],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_dc766bc870994d87b8ce19b66d23be37 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_6476a4d22f7644628cff6b2f88c6b343.setIcon(custom_icon_dc766bc870994d87b8ce19b66d23be37);
+        
+    
+        var popup_6463641397694708bfd610b6d783fe9f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_237a6ee4f0774ca48fca105c12c85bd2 = $(`<div id="html_237a6ee4f0774ca48fca105c12c85bd2" style="width: 100.0%; height: 100.0%;">Focal Year: 1950<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_6463641397694708bfd610b6d783fe9f.setContent(html_237a6ee4f0774ca48fca105c12c85bd2);
+        
+
+        marker_6476a4d22f7644628cff6b2f88c6b343.bindPopup(popup_6463641397694708bfd610b6d783fe9f)
+        ;
+
+        
+    
+    
+            marker_6476a4d22f7644628cff6b2f88c6b343.bindTooltip(
+                `<div>
+                     Mbuti
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be3ac081f1eb4b9b901739096261b74d = L.marker(
+                [60.4232, -144.762],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_3e6a8f6174ca4c5dbb76b19490ecbc63 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_be3ac081f1eb4b9b901739096261b74d.setIcon(custom_icon_3e6a8f6174ca4c5dbb76b19490ecbc63);
+        
+    
+        var popup_d0d6fce7804b47c4b78da5b32bfd500f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_e6d2a05f1f08454eb0bea699b7ac8ae1 = $(`<div id="html_e6d2a05f1f08454eb0bea699b7ac8ae1" style="width: 100.0%; height: 100.0%;">Focal Year: 1890<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_d0d6fce7804b47c4b78da5b32bfd500f.setContent(html_e6d2a05f1f08454eb0bea699b7ac8ae1);
+        
+
+        marker_be3ac081f1eb4b9b901739096261b74d.bindPopup(popup_d0d6fce7804b47c4b78da5b32bfd500f)
+        ;
+
+        
+    
+    
+            marker_be3ac081f1eb4b9b901739096261b74d.bindTooltip(
+                `<div>
+                     Eyak
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25e455a7a23e4d2296c8ac9961c25693 = L.marker(
+                [54.004532, -132.079257],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_be96c904757a42088ee0a88345c5b1d2 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_25e455a7a23e4d2296c8ac9961c25693.setIcon(custom_icon_be96c904757a42088ee0a88345c5b1d2);
+        
+    
+        var popup_b4006546dccc49309581666b8e581662 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_9f94f379503b45ddb004928440237d9c = $(`<div id="html_9f94f379503b45ddb004928440237d9c" style="width: 100.0%; height: 100.0%;">Focal Year: 1875<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_b4006546dccc49309581666b8e581662.setContent(html_9f94f379503b45ddb004928440237d9c);
+        
+
+        marker_25e455a7a23e4d2296c8ac9961c25693.bindPopup(popup_b4006546dccc49309581666b8e581662)
+        ;
+
+        
+    
+    
+            marker_25e455a7a23e4d2296c8ac9961c25693.bindTooltip(
+                `<div>
+                     Haida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1f2a60710f7418c94b9364a6a68e146 = L.marker(
+                [52.3448, -126.689],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_265309aac5e74cee8d867aa50b092e28 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_d1f2a60710f7418c94b9364a6a68e146.setIcon(custom_icon_265309aac5e74cee8d867aa50b092e28);
+        
+    
+        var popup_46ef3ad2f64b43d0a2c30072533818d1 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_cc50df9026f048ff992b5166b2ad13e8 = $(`<div id="html_cc50df9026f048ff992b5166b2ad13e8" style="width: 100.0%; height: 100.0%;">Focal Year: 1880<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_46ef3ad2f64b43d0a2c30072533818d1.setContent(html_cc50df9026f048ff992b5166b2ad13e8);
+        
+
+        marker_d1f2a60710f7418c94b9364a6a68e146.bindPopup(popup_46ef3ad2f64b43d0a2c30072533818d1)
+        ;
+
+        
+    
+    
+            marker_d1f2a60710f7418c94b9364a6a68e146.bindTooltip(
+                `<div>
+                     Nuxalk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d8acbc650a243ea88297b47c433cedb = L.marker(
+                [47.7419, -121.765],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_ffe0f957859a4d5e993f3fbc401f2b46 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_4d8acbc650a243ea88297b47c433cedb.setIcon(custom_icon_ffe0f957859a4d5e993f3fbc401f2b46);
+        
+    
+        var popup_e377dfad408f43af96c08c727ae65f83 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_ca8a9507d81740c69e94385a84609ea3 = $(`<div id="html_ca8a9507d81740c69e94385a84609ea3" style="width: 100.0%; height: 100.0%;">Focal Year: 1860<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_e377dfad408f43af96c08c727ae65f83.setContent(html_ca8a9507d81740c69e94385a84609ea3);
+        
+
+        marker_4d8acbc650a243ea88297b47c433cedb.bindPopup(popup_e377dfad408f43af96c08c727ae65f83)
+        ;
+
+        
+    
+    
+            marker_4d8acbc650a243ea88297b47c433cedb.bindTooltip(
+                `<div>
+                     Twana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_554b186f0d2e48168f5a158848fd31a0 = L.marker(
+                [41.3262, -123.824],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_af9fcd983a9347efb1782b76df4de392 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_554b186f0d2e48168f5a158848fd31a0.setIcon(custom_icon_af9fcd983a9347efb1782b76df4de392);
+        
+    
+        var popup_afe1a2731668443caaec660ecf3ed0fc = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_f1c846ad28264e16a61bda8c0f5afe4e = $(`<div id="html_f1c846ad28264e16a61bda8c0f5afe4e" style="width: 100.0%; height: 100.0%;">Focal Year: 1850<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_afe1a2731668443caaec660ecf3ed0fc.setContent(html_f1c846ad28264e16a61bda8c0f5afe4e);
+        
+
+        marker_554b186f0d2e48168f5a158848fd31a0.bindPopup(popup_afe1a2731668443caaec660ecf3ed0fc)
+        ;
+
+        
+    
+    
+            marker_554b186f0d2e48168f5a158848fd31a0.bindTooltip(
+                `<div>
+                     Yurok
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fc5dfc962f34439b8b2e5e0eed51359 = L.marker(
+                [44.33, -77.5],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_dc789aa8525e416787dbd8227f4f53b4 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_9fc5dfc962f34439b8b2e5e0eed51359.setIcon(custom_icon_dc789aa8525e416787dbd8227f4f53b4);
+        
+    
+        var popup_087ab1e7ff6b437db256d3ba3d097b40 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_08da5ddb13d542ed81aa81d6a9b355a0 = $(`<div id="html_08da5ddb13d542ed81aa81d6a9b355a0" style="width: 100.0%; height: 100.0%;">Focal Year: 1634<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_087ab1e7ff6b437db256d3ba3d097b40.setContent(html_08da5ddb13d542ed81aa81d6a9b355a0);
+        
+
+        marker_9fc5dfc962f34439b8b2e5e0eed51359.bindPopup(popup_087ab1e7ff6b437db256d3ba3d097b40)
+        ;
+
+        
+    
+    
+            marker_9fc5dfc962f34439b8b2e5e0eed51359.bindTooltip(
+                `<div>
+                     Huron
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cb5eb6ab5bf4dbc87b2ad20b894a2e9 = L.marker(
+                [31.75, -91.33],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_50fea9fb091a4f10a6d3de8f83656d65 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_6cb5eb6ab5bf4dbc87b2ad20b894a2e9.setIcon(custom_icon_50fea9fb091a4f10a6d3de8f83656d65);
+        
+    
+        var popup_a3cff76314984263af5ae5cc8cd3c97c = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_aeb705da226e49028143790d16c72d98 = $(`<div id="html_aeb705da226e49028143790d16c72d98" style="width: 100.0%; height: 100.0%;">Focal Year: 1718<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_a3cff76314984263af5ae5cc8cd3c97c.setContent(html_aeb705da226e49028143790d16c72d98);
+        
+
+        marker_6cb5eb6ab5bf4dbc87b2ad20b894a2e9.bindPopup(popup_a3cff76314984263af5ae5cc8cd3c97c)
+        ;
+
+        
+    
+    
+            marker_6cb5eb6ab5bf4dbc87b2ad20b894a2e9.bindTooltip(
+                `<div>
+                     Natchez
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6565dc96096146e3ae5a8752182db4ed = L.marker(
+                [4.75, 10.67],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_3f8d87baa24347309271dd231c1c5ec3 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_6565dc96096146e3ae5a8752182db4ed.setIcon(custom_icon_3f8d87baa24347309271dd231c1c5ec3);
+        
+    
+        var popup_04213632251b4b5d860e6c4eb9034017 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_2c7f946f1d4642d297879c12150177e2 = $(`<div id="html_2c7f946f1d4642d297879c12150177e2" style="width: 100.0%; height: 100.0%;">Focal Year: 1935<br>Role of Gods: Otiose<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_04213632251b4b5d860e6c4eb9034017.setContent(html_2c7f946f1d4642d297879c12150177e2);
+        
+
+        marker_6565dc96096146e3ae5a8752182db4ed.bindPopup(popup_04213632251b4b5d860e6c4eb9034017)
+        ;
+
+        
+    
+    
+            marker_6565dc96096146e3ae5a8752182db4ed.bindTooltip(
+                `<div>
+                     Banen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e870878ddba9488dbf5df7c932a132e6 = L.marker(
+                [19.72, -96.97],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_cb6136757319487eb8b14881730c29b0 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_e870878ddba9488dbf5df7c932a132e6.setIcon(custom_icon_cb6136757319487eb8b14881730c29b0);
+        
+    
+        var popup_d0dd2ab3761241049be0640fc4ef990a = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_15113554a2a44191932a231f5829c6f5 = $(`<div id="html_15113554a2a44191932a231f5829c6f5" style="width: 100.0%; height: 100.0%;">Focal Year: 1520<br>Role of Gods: Active, but not supporting morality<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_d0dd2ab3761241049be0640fc4ef990a.setContent(html_15113554a2a44191932a231f5829c6f5);
+        
+
+        marker_e870878ddba9488dbf5df7c932a132e6.bindPopup(popup_d0dd2ab3761241049be0640fc4ef990a)
+        ;
+
+        
+    
+    
+            marker_e870878ddba9488dbf5df7c932a132e6.bindTooltip(
+                `<div>
+                     Aztec
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14c2e8f474f34bd7a13d0f2e555d9951 = L.marker(
+                [18.198, -94.9109],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_760b3319abcd49a4b1e34a066e7642e0 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_14c2e8f474f34bd7a13d0f2e555d9951.setIcon(custom_icon_760b3319abcd49a4b1e34a066e7642e0);
+        
+    
+        var popup_f0fcaff7d62b4de1a46a88d41cba328a = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_cf9fd88276c44ba4bc44d8fbeca8bf6f = $(`<div id="html_cf9fd88276c44ba4bc44d8fbeca8bf6f" style="width: 100.0%; height: 100.0%;">Focal Year: 1940<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Two or more of above<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_f0fcaff7d62b4de1a46a88d41cba328a.setContent(html_cf9fd88276c44ba4bc44d8fbeca8bf6f);
+        
+
+        marker_14c2e8f474f34bd7a13d0f2e555d9951.bindPopup(popup_f0fcaff7d62b4de1a46a88d41cba328a)
+        ;
+
+        
+    
+    
+            marker_14c2e8f474f34bd7a13d0f2e555d9951.bindTooltip(
+                `<div>
+                     Sierra Popoluca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11e73af080fe4b8a9e7b7d255d316d39 = L.marker(
+                [7.92993, -77.1664],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_31a9361d7118437080811eb46383b805 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_11e73af080fe4b8a9e7b7d255d316d39.setIcon(custom_icon_31a9361d7118437080811eb46383b805);
+        
+    
+        var popup_7835a8d67cc04c8e823072459f699e6c = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_f9ea5c72b0104990906e09731423fbc7 = $(`<div id="html_f9ea5c72b0104990906e09731423fbc7" style="width: 100.0%; height: 100.0%;">Focal Year: 1927<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_7835a8d67cc04c8e823072459f699e6c.setContent(html_f9ea5c72b0104990906e09731423fbc7);
+        
+
+        marker_11e73af080fe4b8a9e7b7d255d316d39.bindPopup(popup_7835a8d67cc04c8e823072459f699e6c)
+        ;
+
+        
+    
+    
+            marker_11e73af080fe4b8a9e7b7d255d316d39.bindTooltip(
+                `<div>
+                     Guna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e2b407ded8341adb2255750513999a8 = L.marker(
+                [6.88039, 9.26287],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_401357642c7343c8831739d1513f2186 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_5e2b407ded8341adb2255750513999a8.setIcon(custom_icon_401357642c7343c8831739d1513f2186);
+        
+    
+        var popup_8f8127f27d3e4968852cb7621ebd39b1 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_e024f18e595a42d88cdfbdc9098b91e4 = $(`<div id="html_e024f18e595a42d88cdfbdc9098b91e4" style="width: 100.0%; height: 100.0%;">Focal Year: 1920<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_8f8127f27d3e4968852cb7621ebd39b1.setContent(html_e024f18e595a42d88cdfbdc9098b91e4);
+        
+
+        marker_5e2b407ded8341adb2255750513999a8.bindPopup(popup_8f8127f27d3e4968852cb7621ebd39b1)
+        ;
+
+        
+    
+    
+            marker_5e2b407ded8341adb2255750513999a8.bindTooltip(
+                `<div>
+                     Tiv
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d1a9a0dbeaa45eeb6025fd469e097ab = L.marker(
+                [15.364795, -61.342957],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_9d16ba6e598f484f85a8ee00273bf786 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_7d1a9a0dbeaa45eeb6025fd469e097ab.setIcon(custom_icon_9d16ba6e598f484f85a8ee00273bf786);
+        
+    
+        var popup_080d4fab77e54b5fae76196c185b5372 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_d3810d78b0ae4b8abfd198f6327e60df = $(`<div id="html_d3810d78b0ae4b8abfd198f6327e60df" style="width: 100.0%; height: 100.0%;">Focal Year: 1650<br>Role of Gods: Otiose<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_080d4fab77e54b5fae76196c185b5372.setContent(html_d3810d78b0ae4b8abfd198f6327e60df);
+        
+
+        marker_7d1a9a0dbeaa45eeb6025fd469e097ab.bindPopup(popup_080d4fab77e54b5fae76196c185b5372)
+        ;
+
+        
+    
+    
+            marker_7d1a9a0dbeaa45eeb6025fd469e097ab.bindTooltip(
+                `<div>
+                     Callinago
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5423448ea36f4467b5de3c624f44f7e8 = L.marker(
+                [7.50851, -59.3528],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_c71dd5e0b6ef409cb6ef0281c3f1019c = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_5423448ea36f4467b5de3c624f44f7e8.setIcon(custom_icon_c71dd5e0b6ef409cb6ef0281c3f1019c);
+        
+    
+        var popup_fd10fedd32f54d119f996e5ead5228d7 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_38058b4721e543a0a98485ba545587b3 = $(`<div id="html_38058b4721e543a0a98485ba545587b3" style="width: 100.0%; height: 100.0%;">Focal Year: 1935<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_fd10fedd32f54d119f996e5ead5228d7.setContent(html_38058b4721e543a0a98485ba545587b3);
+        
+
+        marker_5423448ea36f4467b5de3c624f44f7e8.bindPopup(popup_fd10fedd32f54d119f996e5ead5228d7)
+        ;
+
+        
+    
+    
+            marker_5423448ea36f4467b5de3c624f44f7e8.bindTooltip(
+                `<div>
+                     Warao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24c0f8c19d344b639b01fd84385d2359 = L.marker(
+                [1.67967, -64.8781],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_a2dfe3e2b37042f7a51a03f5c35d20f2 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_24c0f8c19d344b639b01fd84385d2359.setIcon(custom_icon_a2dfe3e2b37042f7a51a03f5c35d20f2);
+        
+    
+        var popup_1546f20481184f58b1e01ea70b1c0744 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_053084b1b72445a68007b6f34b63eed7 = $(`<div id="html_053084b1b72445a68007b6f34b63eed7" style="width: 100.0%; height: 100.0%;">Focal Year: 1965<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_1546f20481184f58b1e01ea70b1c0744.setContent(html_053084b1b72445a68007b6f34b63eed7);
+        
+
+        marker_24c0f8c19d344b639b01fd84385d2359.bindPopup(popup_1546f20481184f58b1e01ea70b1c0744)
+        ;
+
+        
+    
+    
+            marker_24c0f8c19d344b639b01fd84385d2359.bindTooltip(
+                `<div>
+                     Yanomami
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cc136c2597c48a1a35b3a7f71925fa2 = L.marker(
+                [-8.41095, -57.691],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_10eba440cf6d4648b5c9055c97209e3d = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_1cc136c2597c48a1a35b3a7f71925fa2.setIcon(custom_icon_10eba440cf6d4648b5c9055c97209e3d);
+        
+    
+        var popup_6b968af5094e4ac6bcc156434e00106c = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_3c31f7f9c7d647658c367395da5eaa42 = $(`<div id="html_3c31f7f9c7d647658c367395da5eaa42" style="width: 100.0%; height: 100.0%;">Focal Year: 1850<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_6b968af5094e4ac6bcc156434e00106c.setContent(html_3c31f7f9c7d647658c367395da5eaa42);
+        
+
+        marker_1cc136c2597c48a1a35b3a7f71925fa2.bindPopup(popup_6b968af5094e4ac6bcc156434e00106c)
+        ;
+
+        
+    
+    
+            marker_1cc136c2597c48a1a35b3a7f71925fa2.bindTooltip(
+                `<div>
+                     Munduruku
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d74fc2770e64d09b1454e5100ea695e = L.marker(
+                [1.32382, -70.1939],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_de1732e13ab34611b6c504524d97e4b1 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_4d74fc2770e64d09b1454e5100ea695e.setIcon(custom_icon_de1732e13ab34611b6c504524d97e4b1);
+        
+    
+        var popup_8b48e8fe139548d3b26a38fa282ae7e0 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_f9be73c16c0840b299f185c88422be07 = $(`<div id="html_f9be73c16c0840b299f185c88422be07" style="width: 100.0%; height: 100.0%;">Focal Year: 1939<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_8b48e8fe139548d3b26a38fa282ae7e0.setContent(html_f9be73c16c0840b299f185c88422be07);
+        
+
+        marker_4d74fc2770e64d09b1454e5100ea695e.bindPopup(popup_8b48e8fe139548d3b26a38fa282ae7e0)
+        ;
+
+        
+    
+    
+            marker_4d74fc2770e64d09b1454e5100ea695e.bindTooltip(
+                `<div>
+                     Cubeo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91d47486cf6d4c2eb23da3c5e18f0085 = L.marker(
+                [-10.2012, -72.3208],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_874e35334ccd4cdfb8e43e44b5805015 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_91d47486cf6d4c2eb23da3c5e18f0085.setIcon(custom_icon_874e35334ccd4cdfb8e43e44b5805015);
+        
+    
+        var popup_7b51b72982eb40a08031451bd0a816d1 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_2c6538bbbaca465991176d08186ca799 = $(`<div id="html_2c6538bbbaca465991176d08186ca799" style="width: 100.0%; height: 100.0%;">Focal Year: 1960<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_7b51b72982eb40a08031451bd0a816d1.setContent(html_2c6538bbbaca465991176d08186ca799);
+        
+
+        marker_91d47486cf6d4c2eb23da3c5e18f0085.bindPopup(popup_7b51b72982eb40a08031451bd0a816d1)
+        ;
+
+        
+    
+    
+            marker_91d47486cf6d4c2eb23da3c5e18f0085.bindTooltip(
+                `<div>
+                     Amahuaca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_155738dbc576454e81e00d5c42f47bfb = L.marker(
+                [-14.3707, -59.5187],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_4be158c6c88f45c884f321d9c02d3c89 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_155738dbc576454e81e00d5c42f47bfb.setIcon(custom_icon_4be158c6c88f45c884f321d9c02d3c89);
+        
+    
+        var popup_72761b159a664afba0c4ec4614a4e462 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_2c5564a0266e4d748e35a89dee5a4eac = $(`<div id="html_2c5564a0266e4d748e35a89dee5a4eac" style="width: 100.0%; height: 100.0%;">Focal Year: 1940<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_72761b159a664afba0c4ec4614a4e462.setContent(html_2c5564a0266e4d748e35a89dee5a4eac);
+        
+
+        marker_155738dbc576454e81e00d5c42f47bfb.bindPopup(popup_72761b159a664afba0c4ec4614a4e462)
+        ;
+
+        
+    
+    
+            marker_155738dbc576454e81e00d5c42f47bfb.bindTooltip(
+                `<div>
+                     Nambikwara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c03b63d0df414fe6ae349c0c2a424d76 = L.marker(
+                [-22.807778, -42.106389],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_63e5c2bb82fa4ff2a51955c7a35d7a12 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_c03b63d0df414fe6ae349c0c2a424d76.setIcon(custom_icon_63e5c2bb82fa4ff2a51955c7a35d7a12);
+        
+    
+        var popup_ff685ecf6ff744faa31df28f2eef4270 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_77f80f8eb13c482cbedaee138b48a8c3 = $(`<div id="html_77f80f8eb13c482cbedaee138b48a8c3" style="width: 100.0%; height: 100.0%;">Focal Year: 1550<br>Role of Gods: Otiose<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_ff685ecf6ff744faa31df28f2eef4270.setContent(html_77f80f8eb13c482cbedaee138b48a8c3);
+        
+
+        marker_c03b63d0df414fe6ae349c0c2a424d76.bindPopup(popup_ff685ecf6ff744faa31df28f2eef4270)
+        ;
+
+        
+    
+    
+            marker_c03b63d0df414fe6ae349c0c2a424d76.bindTooltip(
+                `<div>
+                     Tupinambá
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_588dc0d2475244c1ba09a467608a8aa0 = L.marker(
+                [-14.3017, -52.4367],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_34bf04fa55da4d6f94a2aa837af34dbf = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_588dc0d2475244c1ba09a467608a8aa0.setIcon(custom_icon_34bf04fa55da4d6f94a2aa837af34dbf);
+        
+    
+        var popup_fd862e7334f740b5bb57f8666c7c22aa = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_2b248331938a49aabada74976ae07835 = $(`<div id="html_2b248331938a49aabada74976ae07835" style="width: 100.0%; height: 100.0%;">Focal Year: 1958<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_fd862e7334f740b5bb57f8666c7c22aa.setContent(html_2b248331938a49aabada74976ae07835);
+        
+
+        marker_588dc0d2475244c1ba09a467608a8aa0.bindPopup(popup_fd862e7334f740b5bb57f8666c7c22aa)
+        ;
+
+        
+    
+    
+            marker_588dc0d2475244c1ba09a467608a8aa0.bindTooltip(
+                `<div>
+                     Shavante
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82f8eef0300d4e4ea3250e9657a2f56c = L.marker(
+                [-26.9217, -49.5886],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_d561e65ed3b145ce92af2622727e527d = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_82f8eef0300d4e4ea3250e9657a2f56c.setIcon(custom_icon_d561e65ed3b145ce92af2622727e527d);
+        
+    
+        var popup_dfe47562f3514776a8ab4852d437a1d2 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_074c4435be9845318387989e698c32a5 = $(`<div id="html_074c4435be9845318387989e698c32a5" style="width: 100.0%; height: 100.0%;">Focal Year: 1932<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_dfe47562f3514776a8ab4852d437a1d2.setContent(html_074c4435be9845318387989e698c32a5);
+        
+
+        marker_82f8eef0300d4e4ea3250e9657a2f56c.bindPopup(popup_dfe47562f3514776a8ab4852d437a1d2)
+        ;
+
+        
+    
+    
+            marker_82f8eef0300d4e4ea3250e9657a2f56c.bindTooltip(
+                `<div>
+                     Aweikoma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da0f72f6644948abb620d2360fcb2e45 = L.marker(
+                [-55.2748, -68.2648],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_1ab0ebb77f254f4baa898517db420c5c = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_da0f72f6644948abb620d2360fcb2e45.setIcon(custom_icon_1ab0ebb77f254f4baa898517db420c5c);
+        
+    
+        var popup_b375ff7e11a04891b43f64cee1b43421 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_94da7e33d31c4b459fc3b8a5a4174c86 = $(`<div id="html_94da7e33d31c4b459fc3b8a5a4174c86" style="width: 100.0%; height: 100.0%;">Focal Year: 1865<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Birds or Waterfowl<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_b375ff7e11a04891b43f64cee1b43421.setContent(html_94da7e33d31c4b459fc3b8a5a4174c86);
+        
+
+        marker_da0f72f6644948abb620d2360fcb2e45.bindPopup(popup_b375ff7e11a04891b43f64cee1b43421)
+        ;
+
+        
+    
+    
+            marker_da0f72f6644948abb620d2360fcb2e45.bindTooltip(
+                `<div>
+                     Yahgan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4660671eba984d9c8a8366a88ed2a0f5 = L.marker(
+                [4.62047, 26.7157],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_08d0cf0aeffd4358a20a266da7c5d6c2 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_4660671eba984d9c8a8366a88ed2a0f5.setIcon(custom_icon_08d0cf0aeffd4358a20a266da7c5d6c2);
+        
+    
+        var popup_fb164e32092d474487786a8538b848aa = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_a2f144909fb44dc28eef7f7fd18ad781 = $(`<div id="html_a2f144909fb44dc28eef7f7fd18ad781" style="width: 100.0%; height: 100.0%;">Focal Year: 1905<br>Role of Gods: Active, but not supporting morality<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_fb164e32092d474487786a8538b848aa.setContent(html_a2f144909fb44dc28eef7f7fd18ad781);
+        
+
+        marker_4660671eba984d9c8a8366a88ed2a0f5.bindPopup(popup_fb164e32092d474487786a8538b848aa)
+        ;
+
+        
+    
+    
+            marker_4660671eba984d9c8a8366a88ed2a0f5.bindTooltip(
+                `<div>
+                     Azande
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdd294509378425ca352bc7209c2e858 = L.marker(
+                [-5.76495, 17.7736],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_0e498ec950ca4673a6f89e2a00651311 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_bdd294509378425ca352bc7209c2e858.setIcon(custom_icon_0e498ec950ca4673a6f89e2a00651311);
+        
+    
+        var popup_a7aa49744d8f4c42b668aead60273bb6 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_19a6c22342094b47a2178956697bb988 = $(`<div id="html_19a6c22342094b47a2178956697bb988" style="width: 100.0%; height: 100.0%;">Focal Year: 1920<br>Role of Gods: Otiose<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_a7aa49744d8f4c42b668aead60273bb6.setContent(html_19a6c22342094b47a2178956697bb988);
+        
+
+        marker_bdd294509378425ca352bc7209c2e858.bindPopup(popup_a7aa49744d8f4c42b668aead60273bb6)
+        ;
+
+        
+    
+    
+            marker_bdd294509378425ca352bc7209c2e858.bindTooltip(
+                `<div>
+                     Suku
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f4db65432b44aa1aca47fb157fbd214 = L.marker(
+                [20.7926, 93.9665],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_0f2e9e0b8880412cbf69c4ba597ea938 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_4f4db65432b44aa1aca47fb157fbd214.setIcon(custom_icon_0f2e9e0b8880412cbf69c4ba597ea938);
+        
+    
+        var popup_db7ec4ed4c68464ba56c347f71fd9485 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_9c0bee59c8fe4db19d41aabc265acef7 = $(`<div id="html_9c0bee59c8fe4db19d41aabc265acef7" style="width: 100.0%; height: 100.0%;">Focal Year: 1965<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 5 (Mahayana Buddhism)</div>`)[0];
+            popup_db7ec4ed4c68464ba56c347f71fd9485.setContent(html_9c0bee59c8fe4db19d41aabc265acef7);
+        
+
+        marker_4f4db65432b44aa1aca47fb157fbd214.bindPopup(popup_db7ec4ed4c68464ba56c347f71fd9485)
+        ;
+
+        
+    
+    
+            marker_4f4db65432b44aa1aca47fb157fbd214.bindTooltip(
+                `<div>
+                     Burmese
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2d6219761a44deaa719a68d47e3f0e2 = L.marker(
+                [5.98085, 101.026],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_bfd19da0d16545ad863bd9778168ccba = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_f2d6219761a44deaa719a68d47e3f0e2.setIcon(custom_icon_bfd19da0d16545ad863bd9778168ccba);
+        
+    
+        var popup_63f4fd55ce15476485d64fed71415edd = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_118d544d36c948bbb88297cf17dad4d0 = $(`<div id="html_118d544d36c948bbb88297cf17dad4d0" style="width: 100.0%; height: 100.0%;">Focal Year: 1925<br>Role of Gods: Active, but not supporting morality<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_63f4fd55ce15476485d64fed71415edd.setContent(html_118d544d36c948bbb88297cf17dad4d0);
+        
+
+        marker_f2d6219761a44deaa719a68d47e3f0e2.bindPopup(popup_63f4fd55ce15476485d64fed71415edd)
+        ;
+
+        
+    
+    
+            marker_f2d6219761a44deaa719a68d47e3f0e2.bindTooltip(
+                `<div>
+                     Semang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10a4392cefcf449e9e069b667f9d987e = L.marker(
+                [6.97396, 81.2618],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_9debcd084bea4e1187ebdb655f1e455f = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_10a4392cefcf449e9e069b667f9d987e.setIcon(custom_icon_9debcd084bea4e1187ebdb655f1e455f);
+        
+    
+        var popup_69ed4c7a644f45d7be6b6dde3c9ae118 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_934ef03e69bd4264852eab0972f7d759 = $(`<div id="html_934ef03e69bd4264852eab0972f7d759" style="width: 100.0%; height: 100.0%;">Focal Year: 1860<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_69ed4c7a644f45d7be6b6dde3c9ae118.setContent(html_934ef03e69bd4264852eab0972f7d759);
+        
+
+        marker_10a4392cefcf449e9e069b667f9d987e.bindPopup(popup_69ed4c7a644f45d7be6b6dde3c9ae118)
+        ;
+
+        
+    
+    
+            marker_10a4392cefcf449e9e069b667f9d987e.bindTooltip(
+                `<div>
+                     Vedda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59234c67d1954fe5b0c5b7413de0f2b7 = L.marker(
+                [-3.83115, 35.0458],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_550f250f310a4a54a13ba3ee2a6d939e = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_59234c67d1954fe5b0c5b7413de0f2b7.setIcon(custom_icon_550f250f310a4a54a13ba3ee2a6d939e);
+        
+    
+        var popup_7da8e665333f4a67890ec2abd0f629e4 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_da6f4869c49f44ba8bc623234082f600 = $(`<div id="html_da6f4869c49f44ba8bc623234082f600" style="width: 100.0%; height: 100.0%;">Focal Year: 1930<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_7da8e665333f4a67890ec2abd0f629e4.setContent(html_da6f4869c49f44ba8bc623234082f600);
+        
+
+        marker_59234c67d1954fe5b0c5b7413de0f2b7.bindPopup(popup_7da8e665333f4a67890ec2abd0f629e4)
+        ;
+
+        
+    
+    
+            marker_59234c67d1954fe5b0c5b7413de0f2b7.bindTooltip(
+                `<div>
+                     Hadza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22eae1f01bee4af39cddd2f6cf225bca = L.marker(
+                [-11.6308, 130.949],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_474b6b8d3d6946a8b289ec979696ce8a = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_22eae1f01bee4af39cddd2f6cf225bca.setIcon(custom_icon_474b6b8d3d6946a8b289ec979696ce8a);
+        
+    
+        var popup_c6e86c2a5fb44cbea8ced0b377bf16dd = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_37e6e4ffd05f48f6a446dc2e0e8ac627 = $(`<div id="html_37e6e4ffd05f48f6a446dc2e0e8ac627" style="width: 100.0%; height: 100.0%;">Focal Year: 1929<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_c6e86c2a5fb44cbea8ced0b377bf16dd.setContent(html_37e6e4ffd05f48f6a446dc2e0e8ac627);
+        
+
+        marker_22eae1f01bee4af39cddd2f6cf225bca.bindPopup(popup_c6e86c2a5fb44cbea8ced0b377bf16dd)
+        ;
+
+        
+    
+    
+            marker_22eae1f01bee4af39cddd2f6cf225bca.bindTooltip(
+                `<div>
+                     Tiwi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_800725ef88de437fa45001c81b446c08 = L.marker(
+                [-23.3583, 135.046],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_ec9ce15d27224cc5976a04efb1cf935f = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/chicken.png"});
+        marker_800725ef88de437fa45001c81b446c08.setIcon(custom_icon_ec9ce15d27224cc5976a04efb1cf935f);
+        
+    
+        var popup_0fad71d01f384419b236db96f7835f84 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_bfa7db382e7b4207a0fd90e4cf6e1c08 = $(`<div id="html_bfa7db382e7b4207a0fd90e4cf6e1c08" style="width: 100.0%; height: 100.0%;">Focal Year: 1896<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_0fad71d01f384419b236db96f7835f84.setContent(html_bfa7db382e7b4207a0fd90e4cf6e1c08);
+        
+
+        marker_800725ef88de437fa45001c81b446c08.bindPopup(popup_0fad71d01f384419b236db96f7835f84)
+        ;
+
+        
+    
+    
+            marker_800725ef88de437fa45001c81b446c08.bindTooltip(
+                `<div>
+                     Northern Aranda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1ed6adb9b7147bca35a833ac5036105 = L.marker(
+                [-15.9534, 168.228],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_7cdd76fd5bf3474da86d8f94c83bdd99 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_d1ed6adb9b7147bca35a833ac5036105.setIcon(custom_icon_7cdd76fd5bf3474da86d8f94c83bdd99);
+        
+    
+        var popup_25ca6b03fd8e4462a4ea4f7a5808a0d5 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_c7d2e0ba018741259a59c466bba73a3a = $(`<div id="html_c7d2e0ba018741259a59c466bba73a3a" style="width: 100.0%; height: 100.0%;">Focal Year: 1953<br>Role of Gods: Absent<br>Animals Hunted: Birds or Waterfowl<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_25ca6b03fd8e4462a4ea4f7a5808a0d5.setContent(html_c7d2e0ba018741259a59c466bba73a3a);
+        
+
+        marker_d1ed6adb9b7147bca35a833ac5036105.bindPopup(popup_25ca6b03fd8e4462a4ea4f7a5808a0d5)
+        ;
+
+        
+    
+    
+            marker_d1ed6adb9b7147bca35a833ac5036105.bindTooltip(
+                `<div>
+                     Bunlap
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_673526dcfa5a41558f373ef47ca68285 = L.marker(
+                [-38.2881, 176.541],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_a93eb859d97d4cce925a2e4d6c3d6635 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_673526dcfa5a41558f373ef47ca68285.setIcon(custom_icon_a93eb859d97d4cce925a2e4d6c3d6635);
+        
+    
+        var popup_fac87bdca1fa41afb38b9344ee8734b0 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_98b5d70effb945ff850e30fdaf5bfbc7 = $(`<div id="html_98b5d70effb945ff850e30fdaf5bfbc7" style="width: 100.0%; height: 100.0%;">Focal Year: 1820<br>Role of Gods: Absent<br>Animals Hunted: Birds or Waterfowl<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_fac87bdca1fa41afb38b9344ee8734b0.setContent(html_98b5d70effb945ff850e30fdaf5bfbc7);
+        
+
+        marker_673526dcfa5a41558f373ef47ca68285.bindPopup(popup_fac87bdca1fa41afb38b9344ee8734b0)
+        ;
+
+        
+    
+    
+            marker_673526dcfa5a41558f373ef47ca68285.bindTooltip(
+                `<div>
+                     Māori
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e77e1e56f76e4599b459c919a2f914a0 = L.marker(
+                [-8.89412, -140.108],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_eb5141e0e9384160b9d02fffbd15288b = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_e77e1e56f76e4599b459c919a2f914a0.setIcon(custom_icon_eb5141e0e9384160b9d02fffbd15288b);
+        
+    
+        var popup_097b332af0bb477eb7e99ce5a1602a6d = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_68cba30288ed47bca13f31a15204a378 = $(`<div id="html_68cba30288ed47bca13f31a15204a378" style="width: 100.0%; height: 100.0%;">Focal Year: 1800<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_097b332af0bb477eb7e99ce5a1602a6d.setContent(html_68cba30288ed47bca13f31a15204a378);
+        
+
+        marker_e77e1e56f76e4599b459c919a2f914a0.bindPopup(popup_097b332af0bb477eb7e99ce5a1602a6d)
+        ;
+
+        
+    
+    
+            marker_e77e1e56f76e4599b459c919a2f914a0.bindTooltip(
+                `<div>
+                     Marquesans
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bc7771860d147799cecb0aacf4d2aba = L.marker(
+                [-13.92, -171.83],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_2f0de3c1d1a6482ebdf4078ce2b61e29 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_0bc7771860d147799cecb0aacf4d2aba.setIcon(custom_icon_2f0de3c1d1a6482ebdf4078ce2b61e29);
+        
+    
+        var popup_7b47bde9787d417789ced0f826ab7274 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_ea5ee0c05267454a9ae72d63ec0d09fe = $(`<div id="html_ea5ee0c05267454a9ae72d63ec0d09fe" style="width: 100.0%; height: 100.0%;">Focal Year: 1829<br>Role of Gods: Absent<br>Animals Hunted: Birds or Waterfowl<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_7b47bde9787d417789ced0f826ab7274.setContent(html_ea5ee0c05267454a9ae72d63ec0d09fe);
+        
+
+        marker_0bc7771860d147799cecb0aacf4d2aba.bindPopup(popup_7b47bde9787d417789ced0f826ab7274)
+        ;
+
+        
+    
+    
+            marker_0bc7771860d147799cecb0aacf4d2aba.bindTooltip(
+                `<div>
+                     Upolu Samoans
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e582b1e34bd4d34b819c5e3c558afea = L.marker(
+                [7.346993, 151.598607],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_595d3188c35546e3adf0e12e96877430 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_8e582b1e34bd4d34b819c5e3c558afea.setIcon(custom_icon_595d3188c35546e3adf0e12e96877430);
+        
+    
+        var popup_8a79ae3df2b94d41ace009fb6d1013fc = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_5274516f529f4cb6a8da1eb5eb94c945 = $(`<div id="html_5274516f529f4cb6a8da1eb5eb94c945" style="width: 100.0%; height: 100.0%;">Focal Year: 1947<br>Role of Gods: Absent<br>Animals Hunted: Birds or Waterfowl<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_8a79ae3df2b94d41ace009fb6d1013fc.setContent(html_5274516f529f4cb6a8da1eb5eb94c945);
+        
+
+        marker_8e582b1e34bd4d34b819c5e3c558afea.bindPopup(popup_8a79ae3df2b94d41ace009fb6d1013fc)
+        ;
+
+        
+    
+    
+            marker_8e582b1e34bd4d34b819c5e3c558afea.bindTooltip(
+                `<div>
+                     Trukese
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0345884597934d2e88c4fde0329e16a9 = L.marker(
+                [16.6646, 121.113],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_c44b0ab0b9cf435c95f4119e9bbb9a4b = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_0345884597934d2e88c4fde0329e16a9.setIcon(custom_icon_c44b0ab0b9cf435c95f4119e9bbb9a4b);
+        
+    
+        var popup_b8bcc48e0b334eab85aa7b26edd6d457 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_4a37107a31ee4486b2a493a7ed592a5c = $(`<div id="html_4a37107a31ee4486b2a493a7ed592a5c" style="width: 100.0%; height: 100.0%;">Focal Year: 1910<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_b8bcc48e0b334eab85aa7b26edd6d457.setContent(html_4a37107a31ee4486b2a493a7ed592a5c);
+        
+
+        marker_0345884597934d2e88c4fde0329e16a9.bindPopup(popup_b8bcc48e0b334eab85aa7b26edd6d457)
+        ;
+
+        
+    
+    
+            marker_0345884597934d2e88c4fde0329e16a9.bindTooltip(
+                `<div>
+                     Ifugao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b89b20ee1b64976b5241d2718eb1ea2 = L.marker(
+                [24.5209, 121.388],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_44bd5b58e46d489d8ebb34e34e32e659 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_5b89b20ee1b64976b5241d2718eb1ea2.setIcon(custom_icon_44bd5b58e46d489d8ebb34e34e32e659);
+        
+    
+        var popup_f22bf89f87c04d1f8efe21f7c9c67000 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_46fce9bb304b42deaa76969976fadec4 = $(`<div id="html_46fce9bb304b42deaa76969976fadec4" style="width: 100.0%; height: 100.0%;">Focal Year: 1930<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_f22bf89f87c04d1f8efe21f7c9c67000.setContent(html_46fce9bb304b42deaa76969976fadec4);
+        
+
+        marker_5b89b20ee1b64976b5241d2718eb1ea2.bindPopup(popup_f22bf89f87c04d1f8efe21f7c9c67000)
+        ;
+
+        
+    
+    
+            marker_5b89b20ee1b64976b5241d2718eb1ea2.bindTooltip(
+                `<div>
+                     Atayal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_689d2e49055d449c8f8c7269c0cb6009 = L.marker(
+                [15.1576, -84.2942],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_af5cc72771b04d479602b34d1ce8b60e = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_689d2e49055d449c8f8c7269c0cb6009.setIcon(custom_icon_af5cc72771b04d479602b34d1ce8b60e);
+        
+    
+        var popup_21d0d899d06a49778d8b5bced55d32ec = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_37dcf9fa01794356a5941c1f9612a2cb = $(`<div id="html_37dcf9fa01794356a5941c1f9612a2cb" style="width: 100.0%; height: 100.0%;">Focal Year: 1921<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Small Mammals<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_21d0d899d06a49778d8b5bced55d32ec.setContent(html_37dcf9fa01794356a5941c1f9612a2cb);
+        
+
+        marker_689d2e49055d449c8f8c7269c0cb6009.bindPopup(popup_21d0d899d06a49778d8b5bced55d32ec)
+        ;
+
+        
+    
+    
+            marker_689d2e49055d449c8f8c7269c0cb6009.bindTooltip(
+                `<div>
+                     Miskito
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f4cea8025ae4679a31933990c463861 = L.marker(
+                [9.39794, -83.0539],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_30842866dced44ebbf0c530c9a4aa723 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_1f4cea8025ae4679a31933990c463861.setIcon(custom_icon_30842866dced44ebbf0c530c9a4aa723);
+        
+    
+        var popup_416f16a6f43340249c6f08d9ed4552b2 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_0de4d60f0b2041e98ef0d6442cf26ea7 = $(`<div id="html_0de4d60f0b2041e98ef0d6442cf26ea7" style="width: 100.0%; height: 100.0%;">Focal Year: 1917<br>Role of Gods: Active, but not supporting morality<br>Animals Hunted: Two or more of above<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_416f16a6f43340249c6f08d9ed4552b2.setContent(html_0de4d60f0b2041e98ef0d6442cf26ea7);
+        
+
+        marker_1f4cea8025ae4679a31933990c463861.bindPopup(popup_416f16a6f43340249c6f08d9ed4552b2)
+        ;
+
+        
+    
+    
+            marker_1f4cea8025ae4679a31933990c463861.bindTooltip(
+                `<div>
+                     Bribri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bb2cfb554b24ebaadffbd2dce844c0f = L.marker(
+                [0.71489, -79.0508],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_02a9fb2cd25d4eb8ba6453dbbee81232 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_4bb2cfb554b24ebaadffbd2dce844c0f.setIcon(custom_icon_02a9fb2cd25d4eb8ba6453dbbee81232);
+        
+    
+        var popup_b459761cbe354caea68df95c2ec265e0 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_175d961effcc49549b81db41e91b95a3 = $(`<div id="html_175d961effcc49549b81db41e91b95a3" style="width: 100.0%; height: 100.0%;">Focal Year: 1908<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_b459761cbe354caea68df95c2ec265e0.setContent(html_175d961effcc49549b81db41e91b95a3);
+        
+
+        marker_4bb2cfb554b24ebaadffbd2dce844c0f.bindPopup(popup_b459761cbe354caea68df95c2ec265e0)
+        ;
+
+        
+    
+    
+            marker_4bb2cfb554b24ebaadffbd2dce844c0f.bindTooltip(
+                `<div>
+                     Chachi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17a1fc8c49684bb19c349389a8de58c8 = L.marker(
+                [-3.45136, -78.1892],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_b119b7aad73b442498b6337b4a9bb485 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_17a1fc8c49684bb19c349389a8de58c8.setIcon(custom_icon_b119b7aad73b442498b6337b4a9bb485);
+        
+    
+        var popup_845a225a737741ac9f1427e71c455772 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_643f44486fbc4008ac7073af7faf8137 = $(`<div id="html_643f44486fbc4008ac7073af7faf8137" style="width: 100.0%; height: 100.0%;">Focal Year: 1920<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_845a225a737741ac9f1427e71c455772.setContent(html_643f44486fbc4008ac7073af7faf8137);
+        
+
+        marker_17a1fc8c49684bb19c349389a8de58c8.bindPopup(popup_845a225a737741ac9f1427e71c455772)
+        ;
+
+        
+    
+    
+            marker_17a1fc8c49684bb19c349389a8de58c8.bindTooltip(
+                `<div>
+                     Shuar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7ce45e00ed14f6999c1010590151ff9 = L.marker(
+                [-6.10712, -45.1299],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_5f279445221e4c35966d78c999a819f3 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_a7ce45e00ed14f6999c1010590151ff9.setIcon(custom_icon_5f279445221e4c35966d78c999a819f3);
+        
+    
+        var popup_fc62e80afd9c4fc4ad337c1a37f5af5e = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_2fb29e230e4a45ffb4688db25a9e220a = $(`<div id="html_2fb29e230e4a45ffb4688db25a9e220a" style="width: 100.0%; height: 100.0%;">Focal Year: 1915<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_fc62e80afd9c4fc4ad337c1a37f5af5e.setContent(html_2fb29e230e4a45ffb4688db25a9e220a);
+        
+
+        marker_a7ce45e00ed14f6999c1010590151ff9.bindPopup(popup_fc62e80afd9c4fc4ad337c1a37f5af5e)
+        ;
+
+        
+    
+    
+            marker_a7ce45e00ed14f6999c1010590151ff9.bindTooltip(
+                `<div>
+                     Canela
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a97290a854f549179c1fcea5f19d7d22 = L.marker(
+                [7.15484, 1.66495],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_99d07ac7f17e49ae8c81b737afd712a9 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_a97290a854f549179c1fcea5f19d7d22.setIcon(custom_icon_99d07ac7f17e49ae8c81b737afd712a9);
+        
+    
+        var popup_a177d2c192db4c2dabde9312d81f6a59 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_a4a57020d9f64b6c8bbbe3127c310166 = $(`<div id="html_a4a57020d9f64b6c8bbbe3127c310166" style="width: 100.0%; height: 100.0%;">Focal Year: 1890<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_a177d2c192db4c2dabde9312d81f6a59.setContent(html_a4a57020d9f64b6c8bbbe3127c310166);
+        
+
+        marker_a97290a854f549179c1fcea5f19d7d22.bindPopup(popup_a177d2c192db4c2dabde9312d81f6a59)
+        ;
+
+        
+    
+    
+            marker_a97290a854f549179c1fcea5f19d7d22.bindTooltip(
+                `<div>
+                     Fon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9708b5762c54a799cbe91ad7d376992 = L.marker(
+                [20.681188, 105.774071],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_33abc126dad64a1386a00784fa8dce52 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_c9708b5762c54a799cbe91ad7d376992.setIcon(custom_icon_33abc126dad64a1386a00784fa8dce52);
+        
+    
+        var popup_54a5467edd4941e6b74235dcdcb2ec4f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_e6d12e5e5ed6466da5405883033ee881 = $(`<div id="html_e6d12e5e5ed6466da5405883033ee881" style="width: 100.0%; height: 100.0%;">Focal Year: 1930<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 5 (Mahayana Buddhism)</div>`)[0];
+            popup_54a5467edd4941e6b74235dcdcb2ec4f.setContent(html_e6d12e5e5ed6466da5405883033ee881);
+        
+
+        marker_c9708b5762c54a799cbe91ad7d376992.bindPopup(popup_54a5467edd4941e6b74235dcdcb2ec4f)
+        ;
+
+        
+    
+    
+            marker_c9708b5762c54a799cbe91ad7d376992.bindTooltip(
+                `<div>
+                     Annamese
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb042f20f4f14c7e8de8dadd4dcdeb99 = L.marker(
+                [13.4125, 103.866667],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_e2124691670d4485a01be6793f4776f1 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_fb042f20f4f14c7e8de8dadd4dcdeb99.setIcon(custom_icon_e2124691670d4485a01be6793f4776f1);
+        
+    
+        var popup_2ff72bc25fc0482dbf1e4b27ad6a6f10 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_b1fc2296c0b446b4a385e85a3d6716c0 = $(`<div id="html_b1fc2296c0b446b4a385e85a3d6716c0" style="width: 100.0%; height: 100.0%;">Focal Year: 1292<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 6 (Hinayana Buddhism)</div>`)[0];
+            popup_2ff72bc25fc0482dbf1e4b27ad6a6f10.setContent(html_b1fc2296c0b446b4a385e85a3d6716c0);
+        
+
+        marker_fb042f20f4f14c7e8de8dadd4dcdeb99.bindPopup(popup_2ff72bc25fc0482dbf1e4b27ad6a6f10)
+        ;
+
+        
+    
+    
+            marker_fb042f20f4f14c7e8de8dadd4dcdeb99.bindTooltip(
+                `<div>
+                     Ancient Khmer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbb8b003890342409b316c793ba1794f = L.marker(
+                [2.09041, 112.934],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_f9a1535d4cf64c3694b061134e632530 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_dbb8b003890342409b316c793ba1794f.setIcon(custom_icon_f9a1535d4cf64c3694b061134e632530);
+        
+    
+        var popup_3c7b28d8ab27492797b6652c1fed6227 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_7dd54db449e1492082127d829c595abe = $(`<div id="html_7dd54db449e1492082127d829c595abe" style="width: 100.0%; height: 100.0%;">Focal Year: 1950<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_3c7b28d8ab27492797b6652c1fed6227.setContent(html_7dd54db449e1492082127d829c595abe);
+        
+
+        marker_dbb8b003890342409b316c793ba1794f.bindPopup(popup_3c7b28d8ab27492797b6652c1fed6227)
+        ;
+
+        
+    
+    
+            marker_dbb8b003890342409b316c793ba1794f.bindTooltip(
+                `<div>
+                     Iban
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df655a70d5344bc39092a7ccb933fa8e = L.marker(
+                [-8.31058, 124.588],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_94d14def85f14efcb39ed081eb941437 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_df655a70d5344bc39092a7ccb933fa8e.setIcon(custom_icon_94d14def85f14efcb39ed081eb941437);
+        
+    
+        var popup_4b0bc47db6b046b1af652de4b2304226 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_041478addfd8492580b7f7cfb691e51c = $(`<div id="html_041478addfd8492580b7f7cfb691e51c" style="width: 100.0%; height: 100.0%;">Focal Year: 1938<br>Role of Gods: Otiose<br>Animals Hunted: Small Mammals<br>Religion: 3 (superficial Islamization)</div>`)[0];
+            popup_4b0bc47db6b046b1af652de4b2304226.setContent(html_041478addfd8492580b7f7cfb691e51c);
+        
+
+        marker_df655a70d5344bc39092a7ccb933fa8e.bindPopup(popup_4b0bc47db6b046b1af652de4b2304226)
+        ;
+
+        
+    
+    
+            marker_df655a70d5344bc39092a7ccb933fa8e.bindTooltip(
+                `<div>
+                     Alorese
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b52af08d1dac489abcf82f54568b51c7 = L.marker(
+                [-8.79019, 148.09],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_5e8b8aba9cd3436890b6d990c9b8b215 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_b52af08d1dac489abcf82f54568b51c7.setIcon(custom_icon_5e8b8aba9cd3436890b6d990c9b8b215);
+        
+    
+        var popup_289b5b62eccd4e08a922ff28b885624e = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_88c6f1921d0e49feb4a1bdc88263a3ad = $(`<div id="html_88c6f1921d0e49feb4a1bdc88263a3ad" style="width: 100.0%; height: 100.0%;">Focal Year: 1925<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_289b5b62eccd4e08a922ff28b885624e.setContent(html_88c6f1921d0e49feb4a1bdc88263a3ad);
+        
+
+        marker_b52af08d1dac489abcf82f54568b51c7.bindPopup(popup_289b5b62eccd4e08a922ff28b885624e)
+        ;
+
+        
+    
+    
+            marker_b52af08d1dac489abcf82f54568b51c7.bindTooltip(
+                `<div>
+                     Orokaiva
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee709fc373a34b02beaefa1be26290b4 = L.marker(
+                [-3.88974, 136.018],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_f2b8a7f4e4d74b69b4ed4266b4eebd16 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_ee709fc373a34b02beaefa1be26290b4.setIcon(custom_icon_f2b8a7f4e4d74b69b4ed4266b4eebd16);
+        
+    
+        var popup_3ab94f023e6b4c0fa23e348c623e3ba1 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_88d76a86773e4e4f97e1e14d8e665d36 = $(`<div id="html_88d76a86773e4e4f97e1e14d8e665d36" style="width: 100.0%; height: 100.0%;">Focal Year: 1955<br>Role of Gods: Otiose<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_3ab94f023e6b4c0fa23e348c623e3ba1.setContent(html_88d76a86773e4e4f97e1e14d8e665d36);
+        
+
+        marker_ee709fc373a34b02beaefa1be26290b4.bindPopup(popup_3ab94f023e6b4c0fa23e348c623e3ba1)
+        ;
+
+        
+    
+    
+            marker_ee709fc373a34b02beaefa1be26290b4.bindTooltip(
+                `<div>
+                     Mee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_965104e897a042f9a52e8475f3ba9848 = L.marker(
+                [-4.08721, 142.664],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_51e5ad152dc1439c959f8e1856f266af = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_965104e897a042f9a52e8475f3ba9848.setIcon(custom_icon_51e5ad152dc1439c959f8e1856f266af);
+        
+    
+        var popup_d3af0b30e3f84b93b41dd7d718ab158e = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_0523e831fc22445d9d32bd5b43cd4d66 = $(`<div id="html_0523e831fc22445d9d32bd5b43cd4d66" style="width: 100.0%; height: 100.0%;">Focal Year: 1937<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_d3af0b30e3f84b93b41dd7d718ab158e.setContent(html_0523e831fc22445d9d32bd5b43cd4d66);
+        
+
+        marker_965104e897a042f9a52e8475f3ba9848.bindPopup(popup_d3af0b30e3f84b93b41dd7d718ab158e)
+        ;
+
+        
+    
+    
+            marker_965104e897a042f9a52e8475f3ba9848.bindTooltip(
+                `<div>
+                     Kwoma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_835f7fafb10d427289e12b5c01c7ea46 = L.marker(
+                [-3.0557, 151.661],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_c8337a247c5a42a7929e1cc7bc91e721 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_835f7fafb10d427289e12b5c01c7ea46.setIcon(custom_icon_c8337a247c5a42a7929e1cc7bc91e721);
+        
+    
+        var popup_29f12ffc6488494cae671a377b2588f8 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_ac4d3805e16e42a08c2a6edf166571f8 = $(`<div id="html_ac4d3805e16e42a08c2a6edf166571f8" style="width: 100.0%; height: 100.0%;">Focal Year: 1930<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_29f12ffc6488494cae671a377b2588f8.setContent(html_ac4d3805e16e42a08c2a6edf166571f8);
+        
+
+        marker_835f7fafb10d427289e12b5c01c7ea46.bindPopup(popup_29f12ffc6488494cae671a377b2588f8)
+        ;
+
+        
+    
+    
+            marker_835f7fafb10d427289e12b5c01c7ea46.bindTooltip(
+                `<div>
+                     Lesu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99e65b01eed64affa20450ab2f958b02 = L.marker(
+                [-8.72574, 151.072],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_cb6cf256bdca48b79c62d87bfc9f5cca = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_99e65b01eed64affa20450ab2f958b02.setIcon(custom_icon_cb6cf256bdca48b79c62d87bfc9f5cca);
+        
+    
+        var popup_12be398ffff542f2a7dad80a85e37183 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_df08caf1c17544df8f5f6709291300ad = $(`<div id="html_df08caf1c17544df8f5f6709291300ad" style="width: 100.0%; height: 100.0%;">Focal Year: 1914<br>Role of Gods: Absent<br>Animals Hunted: Birds or Waterfowl<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_12be398ffff542f2a7dad80a85e37183.setContent(html_df08caf1c17544df8f5f6709291300ad);
+        
+
+        marker_99e65b01eed64affa20450ab2f958b02.bindPopup(popup_12be398ffff542f2a7dad80a85e37183)
+        ;
+
+        
+    
+    
+            marker_99e65b01eed64affa20450ab2f958b02.bindTooltip(
+                `<div>
+                     Trobriands
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_588c064516e6401a995eb2bf0b815857 = L.marker(
+                [-6.6429, 155.452],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_12909d3a207b4703919ef75f7fc7deba = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/pig.png"});
+        marker_588c064516e6401a995eb2bf0b815857.setIcon(custom_icon_12909d3a207b4703919ef75f7fc7deba);
+        
+    
+        var popup_da281089893e490b8b153a48ab359635 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_df333d1565cd42a4a39d1365babdca19 = $(`<div id="html_df333d1565cd42a4a39d1365babdca19" style="width: 100.0%; height: 100.0%;">Focal Year: 1939<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_da281089893e490b8b153a48ab359635.setContent(html_df333d1565cd42a4a39d1365babdca19);
+        
+
+        marker_588c064516e6401a995eb2bf0b815857.bindPopup(popup_da281089893e490b8b153a48ab359635)
+        ;
+
+        
+    
+    
+            marker_588c064516e6401a995eb2bf0b815857.bindTooltip(
+                `<div>
+                     Siuai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c274dbe8d90e458898a03cc55d48ddc6 = L.marker(
+                [-6.86828, 37.5557],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_ecf3134ffa994b24bd64c13ee273f37d = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png"});
+        marker_c274dbe8d90e458898a03cc55d48ddc6.setIcon(custom_icon_ecf3134ffa994b24bd64c13ee273f37d);
+        
+    
+        var popup_17f51473d8b34ab1a7923c02090fe932 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_f367433993454f21873130f2ceffdf9b = $(`<div id="html_f367433993454f21873130f2ceffdf9b" style="width: 100.0%; height: 100.0%;">Focal Year: 1925<br>Role of Gods: Otiose<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_17f51473d8b34ab1a7923c02090fe932.setContent(html_f367433993454f21873130f2ceffdf9b);
+        
+
+        marker_c274dbe8d90e458898a03cc55d48ddc6.bindPopup(popup_17f51473d8b34ab1a7923c02090fe932)
+        ;
+
+        
+    
+    
+            marker_c274dbe8d90e458898a03cc55d48ddc6.bindTooltip(
+                `<div>
+                     Luguru
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84841bec2a6d42288cdf89dc87605514 = L.marker(
+                [0.66884, 32.15153],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_8471a5b9654e45ab9bc6e1ddbee13abe = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png"});
+        marker_84841bec2a6d42288cdf89dc87605514.setIcon(custom_icon_8471a5b9654e45ab9bc6e1ddbee13abe);
+        
+    
+        var popup_e3bc88da08b248a8ac85df2a77ec5ace = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_2ec0851483094078a3de1929550feea0 = $(`<div id="html_2ec0851483094078a3de1929550feea0" style="width: 100.0%; height: 100.0%;">Focal Year: 1875<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_e3bc88da08b248a8ac85df2a77ec5ace.setContent(html_2ec0851483094078a3de1929550feea0);
+        
+
+        marker_84841bec2a6d42288cdf89dc87605514.bindPopup(popup_e3bc88da08b248a8ac85df2a77ec5ace)
+        ;
+
+        
+    
+    
+            marker_84841bec2a6d42288cdf89dc87605514.bindTooltip(
+                `<div>
+                     Ganda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1da80b95ed984b559f3c98136f408513 = L.marker(
+                [35.0056, -108.782],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_82cd339d98ad40a59205fb8fdccaf8b0 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png"});
+        marker_1da80b95ed984b559f3c98136f408513.setIcon(custom_icon_82cd339d98ad40a59205fb8fdccaf8b0);
+        
+    
+        var popup_40c19b8d51d042c1a00b5e46b88c1fa6 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_a494512f957648dea0fc587aba6380f1 = $(`<div id="html_a494512f957648dea0fc587aba6380f1" style="width: 100.0%; height: 100.0%;">Focal Year: 1880<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_40c19b8d51d042c1a00b5e46b88c1fa6.setContent(html_a494512f957648dea0fc587aba6380f1);
+        
+
+        marker_1da80b95ed984b559f3c98136f408513.bindPopup(popup_40c19b8d51d042c1a00b5e46b88c1fa6)
+        ;
+
+        
+    
+    
+            marker_1da80b95ed984b559f3c98136f408513.bindTooltip(
+                `<div>
+                     Zuni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d292e1e1f87f4db38e6c0b501d019318 = L.marker(
+                [-17.0, -68.5],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_57cdeb8f49ff4b54a8e2d4c10948e0f4 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png"});
+        marker_d292e1e1f87f4db38e6c0b501d019318.setIcon(custom_icon_57cdeb8f49ff4b54a8e2d4c10948e0f4);
+        
+    
+        var popup_2e25948ba6d140a781924de7532d9cf5 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_27604f196a4c439d90715348b261988b = $(`<div id="html_27604f196a4c439d90715348b261988b" style="width: 100.0%; height: 100.0%;">Focal Year: 1940<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Birds or Waterfowl<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_2e25948ba6d140a781924de7532d9cf5.setContent(html_27604f196a4c439d90715348b261988b);
+        
+
+        marker_d292e1e1f87f4db38e6c0b501d019318.bindPopup(popup_2e25948ba6d140a781924de7532d9cf5)
+        ;
+
+        
+    
+    
+            marker_d292e1e1f87f4db38e6c0b501d019318.bindTooltip(
+                `<div>
+                     Aymara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3f93833b3074302865634d7c95be378 = L.marker(
+                [-38.7392, -71.277],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_4e78dc84caa74eafa663f61a55fb3eba = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png"});
+        marker_a3f93833b3074302865634d7c95be378.setIcon(custom_icon_4e78dc84caa74eafa663f61a55fb3eba);
+        
+    
+        var popup_866caf1814c64e8387fa605ede0cfeb1 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_81ba9452d85a4a1c80adc0fa0249b1d8 = $(`<div id="html_81ba9452d85a4a1c80adc0fa0249b1d8" style="width: 100.0%; height: 100.0%;">Focal Year: 1950<br>Role of Gods: Active, but not supporting morality<br>Animals Hunted: Birds or Waterfowl<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_866caf1814c64e8387fa605ede0cfeb1.setContent(html_81ba9452d85a4a1c80adc0fa0249b1d8);
+        
+
+        marker_a3f93833b3074302865634d7c95be378.bindPopup(popup_866caf1814c64e8387fa605ede0cfeb1)
+        ;
+
+        
+    
+    
+            marker_a3f93833b3074302865634d7c95be378.bindTooltip(
+                `<div>
+                     Mapuche
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bb316e33c6640738d917809732761d0 = L.marker(
+                [7.90935, -10.9926],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_a5c07950eff64c9495302244757c4988 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png"});
+        marker_1bb316e33c6640738d917809732761d0.setIcon(custom_icon_a5c07950eff64c9495302244757c4988);
+        
+    
+        var popup_00186a9e8ade492caf10a39d3a53ee3f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_e016ebaae30744d4984bc098f92511c6 = $(`<div id="html_e016ebaae30744d4984bc098f92511c6" style="width: 100.0%; height: 100.0%;">Focal Year: 1945<br>Role of Gods: Otiose<br>Animals Hunted: Small Mammals<br>Religion: 3 (superficial Islamization)</div>`)[0];
+            popup_00186a9e8ade492caf10a39d3a53ee3f.setContent(html_e016ebaae30744d4984bc098f92511c6);
+        
+
+        marker_1bb316e33c6640738d917809732761d0.bindPopup(popup_00186a9e8ade492caf10a39d3a53ee3f)
+        ;
+
+        
+    
+    
+            marker_1bb316e33c6640738d917809732761d0.bindTooltip(
+                `<div>
+                     Mende
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c03a20e45fac4b4f883271cd633ea023 = L.marker(
+                [9.38875, 34.60448],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_3569228f841f4e8dacc4389853411bd6 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png"});
+        marker_c03a20e45fac4b4f883271cd633ea023.setIcon(custom_icon_3569228f841f4e8dacc4389853411bd6);
+        
+    
+        var popup_8d0bf6c33ca84a619817d56b9e0cc5c6 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_5aa4c71ce00e462c924078a0eee63565 = $(`<div id="html_5aa4c71ce00e462c924078a0eee63565" style="width: 100.0%; height: 100.0%;">Focal Year: 1939<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_8d0bf6c33ca84a619817d56b9e0cc5c6.setContent(html_5aa4c71ce00e462c924078a0eee63565);
+        
+
+        marker_c03a20e45fac4b4f883271cd633ea023.bindPopup(popup_8d0bf6c33ca84a619817d56b9e0cc5c6)
+        ;
+
+        
+    
+    
+            marker_c03a20e45fac4b4f883271cd633ea023.bindTooltip(
+                `<div>
+                     Mao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a28ff15a5614bee8289e33acf5114d5 = L.marker(
+                [21.2837, 31.8992],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_ef55e428cd5743f08ad4f18bf4114978 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png"});
+        marker_5a28ff15a5614bee8289e33acf5114d5.setIcon(custom_icon_ef55e428cd5743f08ad4f18bf4114978);
+        
+    
+        var popup_796ab6d9ff684fc0be6b9e78d8461f79 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_c37ef39587e14e51829569fd356576de = $(`<div id="html_c37ef39587e14e51829569fd356576de" style="width: 100.0%; height: 100.0%;">Focal Year: 1900<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Large Game<br>Religion: 1 (deep Islamization)</div>`)[0];
+            popup_796ab6d9ff684fc0be6b9e78d8461f79.setContent(html_c37ef39587e14e51829569fd356576de);
+        
+
+        marker_5a28ff15a5614bee8289e33acf5114d5.bindPopup(popup_796ab6d9ff684fc0be6b9e78d8461f79)
+        ;
+
+        
+    
+    
+            marker_5a28ff15a5614bee8289e33acf5114d5.bindTooltip(
+                `<div>
+                     Barabra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_452cf22799f64e87b7d7cecbde33f9a0 = L.marker(
+                [31.7761, 35.1725],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_3966ee4aeb1f43b5a67a45d5773fd091 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png"});
+        marker_452cf22799f64e87b7d7cecbde33f9a0.setIcon(custom_icon_3966ee4aeb1f43b5a67a45d5773fd091);
+        
+    
+        var popup_f4df3578039149c2bb1f62a3d3708676 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_1905a4f684f140169bdbc41c8a0e020e = $(`<div id="html_1905a4f684f140169bdbc41c8a0e020e" style="width: 100.0%; height: 100.0%;">Focal Year: -621<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_f4df3578039149c2bb1f62a3d3708676.setContent(html_1905a4f684f140169bdbc41c8a0e020e);
+        
+
+        marker_452cf22799f64e87b7d7cecbde33f9a0.bindPopup(popup_f4df3578039149c2bb1f62a3d3708676)
+        ;
+
+        
+    
+    
+            marker_452cf22799f64e87b7d7cecbde33f9a0.bindTooltip(
+                `<div>
+                     Hebrews
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0ce8b769d4b4844ab8901e0605466dd = L.marker(
+                [35.6539, 45.8077],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_006d397dba2d4913ad46db118732273d = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png"});
+        marker_b0ce8b769d4b4844ab8901e0605466dd.setIcon(custom_icon_006d397dba2d4913ad46db118732273d);
+        
+    
+        var popup_3ca248193f9f4e1898b46634bec73fbe = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_c33b7b9a0bf249dbb679ef02f911217c = $(`<div id="html_c33b7b9a0bf249dbb679ef02f911217c" style="width: 100.0%; height: 100.0%;">Focal Year: 1951<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Two or more of above<br>Religion: 1 (deep Islamization)</div>`)[0];
+            popup_3ca248193f9f4e1898b46634bec73fbe.setContent(html_c33b7b9a0bf249dbb679ef02f911217c);
+        
+
+        marker_b0ce8b769d4b4844ab8901e0605466dd.bindPopup(popup_3ca248193f9f4e1898b46634bec73fbe)
+        ;
+
+        
+    
+    
+            marker_b0ce8b769d4b4844ab8901e0605466dd.bindTooltip(
+                `<div>
+                     Kurd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d245a66b7ec74827aa4533a23c7031aa = L.marker(
+                [28.1947, 102.121],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_e5c3d770495145358bbbee01db279b01 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/sheep.png"});
+        marker_d245a66b7ec74827aa4533a23c7031aa.setIcon(custom_icon_e5c3d770495145358bbbee01db279b01);
+        
+    
+        var popup_8648a68392f344b2b3aa5fc3773fe4bd = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_1b869716eb6d49ef84c503bace3680ee = $(`<div id="html_1b869716eb6d49ef84c503bace3680ee" style="width: 100.0%; height: 100.0%;">Focal Year: 1910<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_8648a68392f344b2b3aa5fc3773fe4bd.setContent(html_1b869716eb6d49ef84c503bace3680ee);
+        
+
+        marker_d245a66b7ec74827aa4533a23c7031aa.bindPopup(popup_8648a68392f344b2b3aa5fc3773fe4bd)
+        ;
+
+        
+    
+    
+            marker_d245a66b7ec74827aa4533a23c7031aa.bindTooltip(
+                `<div>
+                     Lolo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb451c3db8314c068a2618c63f317139 = L.marker(
+                [42.5861, -121.704],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_3e6c1228f0aa4b9fb2929f61c5e4e0a2 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/horse.png"});
+        marker_cb451c3db8314c068a2618c63f317139.setIcon(custom_icon_3e6c1228f0aa4b9fb2929f61c5e4e0a2);
+        
+    
+        var popup_d0a69eac842b47989bf7a47f3ab99185 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_eb60bf1989c64e1bacac5fc6a919612a = $(`<div id="html_eb60bf1989c64e1bacac5fc6a919612a" style="width: 100.0%; height: 100.0%;">Focal Year: 1860<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_d0a69eac842b47989bf7a47f3ab99185.setContent(html_eb60bf1989c64e1bacac5fc6a919612a);
+        
+
+        marker_cb451c3db8314c068a2618c63f317139.bindPopup(popup_d0a69eac842b47989bf7a47f3ab99185)
+        ;
+
+        
+    
+    
+            marker_cb451c3db8314c068a2618c63f317139.bindTooltip(
+                `<div>
+                     Klamath
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48c990e84a1749da9e687638074260d1 = L.marker(
+                [48.7892, -115.065],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_14d775c45e2f4431b62b13e15b97d8c8 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/horse.png"});
+        marker_48c990e84a1749da9e687638074260d1.setIcon(custom_icon_14d775c45e2f4431b62b13e15b97d8c8);
+        
+    
+        var popup_11f40c813adb41b9b0d13b8815614d6b = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_529c0f160dd54bc8a1959681db465204 = $(`<div id="html_529c0f160dd54bc8a1959681db465204" style="width: 100.0%; height: 100.0%;">Focal Year: 1890<br>Role of Gods: Otiose<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_11f40c813adb41b9b0d13b8815614d6b.setContent(html_529c0f160dd54bc8a1959681db465204);
+        
+
+        marker_48c990e84a1749da9e687638074260d1.bindPopup(popup_11f40c813adb41b9b0d13b8815614d6b)
+        ;
+
+        
+    
+    
+            marker_48c990e84a1749da9e687638074260d1.bindTooltip(
+                `<div>
+                     Kutenai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cba6a7802cb64d59975cade184127534 = L.marker(
+                [48.4834, -108.738],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_9dfa0e515cc54d9f8ed4159dde67f842 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/horse.png"});
+        marker_cba6a7802cb64d59975cade184127534.setIcon(custom_icon_9dfa0e515cc54d9f8ed4159dde67f842);
+        
+    
+        var popup_f295a21f55bb4578a8a4944aab3c12b0 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_f97fbb457c2240479595e270ad04d938 = $(`<div id="html_f97fbb457c2240479595e270ad04d938" style="width: 100.0%; height: 100.0%;">Focal Year: 1880<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_f295a21f55bb4578a8a4944aab3c12b0.setContent(html_f97fbb457c2240479595e270ad04d938);
+        
+
+        marker_cba6a7802cb64d59975cade184127534.bindPopup(popup_f295a21f55bb4578a8a4944aab3c12b0)
+        ;
+
+        
+    
+    
+            marker_cba6a7802cb64d59975cade184127534.bindTooltip(
+                `<div>
+                     Gros Ventre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84faded567a346f0a2cdfeaef5e9c92f = L.marker(
+                [47.7534, -102.528],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_aca46557c0b5432eae2e826bc8971329 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/horse.png"});
+        marker_84faded567a346f0a2cdfeaef5e9c92f.setIcon(custom_icon_aca46557c0b5432eae2e826bc8971329);
+        
+    
+        var popup_cd04df2aa89443d9bacaf798ca329af1 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_921e0484e11d4e489e50f7208e9b0f5b = $(`<div id="html_921e0484e11d4e489e50f7208e9b0f5b" style="width: 100.0%; height: 100.0%;">Focal Year: 1836<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_cd04df2aa89443d9bacaf798ca329af1.setContent(html_921e0484e11d4e489e50f7208e9b0f5b);
+        
+
+        marker_84faded567a346f0a2cdfeaef5e9c92f.bindPopup(popup_cd04df2aa89443d9bacaf798ca329af1)
+        ;
+
+        
+    
+    
+            marker_84faded567a346f0a2cdfeaef5e9c92f.bindTooltip(
+                `<div>
+                     Hidatsa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d7213397b544d5eab141af12d6edbc9 = L.marker(
+                [36.2862, -96.8937],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_ce45e00ceada4486ae5223d7ec8ad8a9 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/horse.png"});
+        marker_2d7213397b544d5eab141af12d6edbc9.setIcon(custom_icon_ce45e00ceada4486ae5223d7ec8ad8a9);
+        
+    
+        var popup_231f4b617a384d6d857d9795f8bf810d = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_1c6bee7da92a430ca1d499eb977a5cd9 = $(`<div id="html_1c6bee7da92a430ca1d499eb977a5cd9" style="width: 100.0%; height: 100.0%;">Focal Year: 1867<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_231f4b617a384d6d857d9795f8bf810d.setContent(html_1c6bee7da92a430ca1d499eb977a5cd9);
+        
+
+        marker_2d7213397b544d5eab141af12d6edbc9.bindPopup(popup_231f4b617a384d6d857d9795f8bf810d)
+        ;
+
+        
+    
+    
+            marker_2d7213397b544d5eab141af12d6edbc9.bindTooltip(
+                `<div>
+                     Pawnee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f52d5ea7a6d47b68c99037814b4c7bc = L.marker(
+                [31.0, -87.5],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_1b93d4aee7cb4c32b1d80cc1fec38286 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/horse.png"});
+        marker_7f52d5ea7a6d47b68c99037814b4c7bc.setIcon(custom_icon_1b93d4aee7cb4c32b1d80cc1fec38286);
+        
+    
+        var popup_0baa553c3256473aac94f993e8740ee3 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_532bfbf717024b46b3184ea593bce420 = $(`<div id="html_532bfbf717024b46b3184ea593bce420" style="width: 100.0%; height: 100.0%;">Focal Year: 1800<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_0baa553c3256473aac94f993e8740ee3.setContent(html_532bfbf717024b46b3184ea593bce420);
+        
+
+        marker_7f52d5ea7a6d47b68c99037814b4c7bc.bindPopup(popup_0baa553c3256473aac94f993e8740ee3)
+        ;
+
+        
+    
+    
+            marker_7f52d5ea7a6d47b68c99037814b4c7bc.bindTooltip(
+                `<div>
+                     Muscogee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3340dffd159a465eb0a1dc8856ec611e = L.marker(
+                [33.1291, -105.566],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_a1af497219274f4abf178080f332c876 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/horse.png"});
+        marker_3340dffd159a465eb0a1dc8856ec611e.setIcon(custom_icon_a1af497219274f4abf178080f332c876);
+        
+    
+        var popup_0f0d07c1ed1c47d8b46fe6bfb79dcc43 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_4d6417d4f4f74b539e3be5221c450385 = $(`<div id="html_4d6417d4f4f74b539e3be5221c450385" style="width: 100.0%; height: 100.0%;">Focal Year: 1870<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_0f0d07c1ed1c47d8b46fe6bfb79dcc43.setContent(html_4d6417d4f4f74b539e3be5221c450385);
+        
+
+        marker_3340dffd159a465eb0a1dc8856ec611e.bindPopup(popup_0f0d07c1ed1c47d8b46fe6bfb79dcc43)
+        ;
+
+        
+    
+    
+            marker_3340dffd159a465eb0a1dc8856ec611e.bindTooltip(
+                `<div>
+                     Chiricahua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a776c624459c48e68932e2de21031eec = L.marker(
+                [-22.6559, -58.9053],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_9ed2c285d30b47499ddeaebb98548af4 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/horse.png"});
+        marker_a776c624459c48e68932e2de21031eec.setIcon(custom_icon_9ed2c285d30b47499ddeaebb98548af4);
+        
+    
+        var popup_1f1fb0f374584d41a0130b868f7c2bc9 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_b5afae808eab4f52bf2bb0be074e8f93 = $(`<div id="html_b5afae808eab4f52bf2bb0be074e8f93" style="width: 100.0%; height: 100.0%;">Focal Year: 1889<br>Role of Gods: Otiose<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_1f1fb0f374584d41a0130b868f7c2bc9.setContent(html_b5afae808eab4f52bf2bb0be074e8f93);
+        
+
+        marker_a776c624459c48e68932e2de21031eec.bindPopup(popup_1f1fb0f374584d41a0130b868f7c2bc9)
+        ;
+
+        
+    
+    
+            marker_a776c624459c48e68932e2de21031eec.bindTooltip(
+                `<div>
+                     Lengua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1188189286945a2923a6df0ad93ea54 = L.marker(
+                [-47.5796, -68.3235],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_dbc11044b26b40c4ac8299fe498d13f3 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/horse.png"});
+        marker_e1188189286945a2923a6df0ad93ea54.setIcon(custom_icon_dbc11044b26b40c4ac8299fe498d13f3);
+        
+    
+        var popup_0a32cb1ea12a4d41a7308e1b92b2d87c = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_b563616bf74f46bdae2a8394b32b7c52 = $(`<div id="html_b563616bf74f46bdae2a8394b32b7c52" style="width: 100.0%; height: 100.0%;">Focal Year: 1870<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_0a32cb1ea12a4d41a7308e1b92b2d87c.setContent(html_b563616bf74f46bdae2a8394b32b7c52);
+        
+
+        marker_e1188189286945a2923a6df0ad93ea54.bindPopup(popup_0a32cb1ea12a4d41a7308e1b92b2d87c)
+        ;
+
+        
+    
+    
+            marker_e1188189286945a2923a6df0ad93ea54.bindTooltip(
+                `<div>
+                     Tehuelche
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a32ba41477b14792a1c63e4de52ecee5 = L.marker(
+                [68.6436, 170.045],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_a5ac8f97c70c4481b55b1b7a613e585c = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/reindeer.png"});
+        marker_a32ba41477b14792a1c63e4de52ecee5.setIcon(custom_icon_a5ac8f97c70c4481b55b1b7a613e585c);
+        
+    
+        var popup_0a687ec2550d4b339a644290125716f8 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_6344e874a2cb4910a4f6a00236b99188 = $(`<div id="html_6344e874a2cb4910a4f6a00236b99188" style="width: 100.0%; height: 100.0%;">Focal Year: 1900<br>Role of Gods: Active, but not supporting morality<br>Animals Hunted: Large Game<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_0a687ec2550d4b339a644290125716f8.setContent(html_6344e874a2cb4910a4f6a00236b99188);
+        
+
+        marker_a32ba41477b14792a1c63e4de52ecee5.bindPopup(popup_0a687ec2550d4b339a644290125716f8)
+        ;
+
+        
+    
+    
+            marker_a32ba41477b14792a1c63e4de52ecee5.bindTooltip(
+                `<div>
+                     Chukchi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65e94f0c30d44e00ae42bc4c98e21caf = L.marker(
+                [68.725, 22.1113],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_6bcd567c3c4b49c48f98d5112df9c263 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/reindeer.png"});
+        marker_65e94f0c30d44e00ae42bc4c98e21caf.setIcon(custom_icon_6bcd567c3c4b49c48f98d5112df9c263);
+        
+    
+        var popup_89a71d0f013746a0a55bfc2d1733180c = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_3e540a0a0d5f4d438f5e76de68f2ea2e = $(`<div id="html_3e540a0a0d5f4d438f5e76de68f2ea2e" style="width: 100.0%; height: 100.0%;">Focal Year: 1950<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Two or more of above<br>Religion: 2 (deep Christianization)</div>`)[0];
+            popup_89a71d0f013746a0a55bfc2d1733180c.setContent(html_3e540a0a0d5f4d438f5e76de68f2ea2e);
+        
+
+        marker_65e94f0c30d44e00ae42bc4c98e21caf.bindPopup(popup_89a71d0f013746a0a55bfc2d1733180c)
+        ;
+
+        
+    
+    
+            marker_65e94f0c30d44e00ae42bc4c98e21caf.bindTooltip(
+                `<div>
+                     Sami
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d17d19a378814c0e809879e879ce56fc = L.marker(
+                [66.1775, 71.0234],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_2f9c9cdd3cd64c999daa1903a21b1676 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/reindeer.png"});
+        marker_d17d19a378814c0e809879e879ce56fc.setIcon(custom_icon_2f9c9cdd3cd64c999daa1903a21b1676);
+        
+    
+        var popup_18cd3cde798c48d2b4fe319a2be6f9df = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_2d95422099d241629593bc0964a74118 = $(`<div id="html_2d95422099d241629593bc0964a74118" style="width: 100.0%; height: 100.0%;">Focal Year: 1894<br>Role of Gods: Active, but not supporting morality<br>Animals Hunted: Large Game<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_18cd3cde798c48d2b4fe319a2be6f9df.setContent(html_2d95422099d241629593bc0964a74118);
+        
+
+        marker_d17d19a378814c0e809879e879ce56fc.bindPopup(popup_18cd3cde798c48d2b4fe319a2be6f9df)
+        ;
+
+        
+    
+    
+            marker_d17d19a378814c0e809879e879ce56fc.bindTooltip(
+                `<div>
+                     Yurak-Samoyeds
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5838d10419d2485bb6b7af4ce7744010 = L.marker(
+                [-14.0853, -71.7663],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_8bed93498e1c40d180f5455fdb4445d3 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/camel.png"});
+        marker_5838d10419d2485bb6b7af4ce7744010.setIcon(custom_icon_8bed93498e1c40d180f5455fdb4445d3);
+        
+    
+        var popup_4d7f5fe584374b46b28426f606f29a29 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_263e39bb6c5743fc967b2ada055dda6b = $(`<div id="html_263e39bb6c5743fc967b2ada055dda6b" style="width: 100.0%; height: 100.0%;">Focal Year: 1530<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_4d7f5fe584374b46b28426f606f29a29.setContent(html_263e39bb6c5743fc967b2ada055dda6b);
+        
+
+        marker_5838d10419d2485bb6b7af4ce7744010.bindPopup(popup_4d7f5fe584374b46b28426f606f29a29)
+        ;
+
+        
+    
+    
+            marker_5838d10419d2485bb6b7af4ce7744010.bindTooltip(
+                `<div>
+                     Inca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fb53925093a4aae93b215779625cde3 = L.marker(
+                [18.0426, 14.7717],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_4cc412ee18184fff83bd3b082f02a217 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/camel.png"});
+        marker_4fb53925093a4aae93b215779625cde3.setIcon(custom_icon_4cc412ee18184fff83bd3b082f02a217);
+        
+    
+        var popup_280b81f526b14a2a9c2c44ba3bed0a77 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_18814af2edd64c8cbc5fa9618fb9a13b = $(`<div id="html_18814af2edd64c8cbc5fa9618fb9a13b" style="width: 100.0%; height: 100.0%;">Focal Year: 1950<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Large Game<br>Religion: 1 (deep Islamization)</div>`)[0];
+            popup_280b81f526b14a2a9c2c44ba3bed0a77.setContent(html_18814af2edd64c8cbc5fa9618fb9a13b);
+        
+
+        marker_4fb53925093a4aae93b215779625cde3.bindPopup(popup_280b81f526b14a2a9c2c44ba3bed0a77)
+        ;
+
+        
+    
+    
+            marker_4fb53925093a4aae93b215779625cde3.bindTooltip(
+                `<div>
+                     Teda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3241136b07884b17a81d215a5f6a3260 = L.marker(
+                [29.6742, 33.6113],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_9f0645d6dc014af188579ce3512e90a1 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/camel.png"});
+        marker_3241136b07884b17a81d215a5f6a3260.setIcon(custom_icon_9f0645d6dc014af188579ce3512e90a1);
+        
+    
+        var popup_9d74b96fe5db44cb8457c5834e83c981 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_f4b94904e6864b589a2cc4a734bdf85c = $(`<div id="html_f4b94904e6864b589a2cc4a734bdf85c" style="width: 100.0%; height: 100.0%;">Focal Year: 1913<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Two or more of above<br>Religion: 1 (deep Islamization)</div>`)[0];
+            popup_9d74b96fe5db44cb8457c5834e83c981.setContent(html_f4b94904e6864b589a2cc4a734bdf85c);
+        
+
+        marker_3241136b07884b17a81d215a5f6a3260.bindPopup(popup_9d74b96fe5db44cb8457c5834e83c981)
+        ;
+
+        
+    
+    
+            marker_3241136b07884b17a81d215a5f6a3260.bindTooltip(
+                `<div>
+                     Rwala
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fab7319626fe4979823822f0b885c95f = L.marker(
+                [-0.29005, 36.719],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_ddeb18195bab4914893da5c4050d1ea7 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_fab7319626fe4979823822f0b885c95f.setIcon(custom_icon_ddeb18195bab4914893da5c4050d1ea7);
+        
+    
+        var popup_5a2e6246995f4b41bf0bd69792d420c3 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_8a9116a6cd924bf38beddebf6edcd253 = $(`<div id="html_8a9116a6cd924bf38beddebf6edcd253" style="width: 100.0%; height: 100.0%;">Focal Year: 1920<br>Role of Gods: Active, but not supporting morality<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_5a2e6246995f4b41bf0bd69792d420c3.setContent(html_8a9116a6cd924bf38beddebf6edcd253);
+        
+
+        marker_fab7319626fe4979823822f0b885c95f.bindPopup(popup_5a2e6246995f4b41bf0bd69792d420c3)
+        ;
+
+        
+    
+    
+            marker_fab7319626fe4979823822f0b885c95f.bindTooltip(
+                `<div>
+                     Kikuyu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56ab241c3c3a4ba7bb2f9b412dec2691 = L.marker(
+                [37.5, 128.0],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_cb8830b1ca624ff68c7da588324f5753 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_56ab241c3c3a4ba7bb2f9b412dec2691.setIcon(custom_icon_cb8830b1ca624ff68c7da588324f5753);
+        
+    
+        var popup_28a2dc6a79a44681a221a202b14fb2ef = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_0a468bf34b62480cab806b94f704009e = $(`<div id="html_0a468bf34b62480cab806b94f704009e" style="width: 100.0%; height: 100.0%;">Focal Year: 1947<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 5 (Mahayana Buddhism)</div>`)[0];
+            popup_28a2dc6a79a44681a221a202b14fb2ef.setContent(html_0a468bf34b62480cab806b94f704009e);
+        
+
+        marker_56ab241c3c3a4ba7bb2f9b412dec2691.bindPopup(popup_28a2dc6a79a44681a221a202b14fb2ef)
+        ;
+
+        
+    
+    
+            marker_56ab241c3c3a4ba7bb2f9b412dec2691.bindTooltip(
+                `<div>
+                     Koreans
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17f58def36f34fa19affb0a47f790fdb = L.marker(
+                [11.395566, -72.199791],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_d472e0de12034bbf949516f8f9031a35 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_17f58def36f34fa19affb0a47f790fdb.setIcon(custom_icon_d472e0de12034bbf949516f8f9031a35);
+        
+    
+        var popup_ee4d9601ceb042c2afc5884db7c15b37 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_2b89b759a271465e86b67db7902f8d00 = $(`<div id="html_2b89b759a271465e86b67db7902f8d00" style="width: 100.0%; height: 100.0%;">Focal Year: 1947<br>Role of Gods: Active, but not supporting morality<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_ee4d9601ceb042c2afc5884db7c15b37.setContent(html_2b89b759a271465e86b67db7902f8d00);
+        
+
+        marker_17f58def36f34fa19affb0a47f790fdb.bindPopup(popup_ee4d9601ceb042c2afc5884db7c15b37)
+        ;
+
+        
+    
+    
+            marker_17f58def36f34fa19affb0a47f790fdb.bindTooltip(
+                `<div>
+                     Wayuu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e98b1fee492f41719c7a8e2714cbdb22 = L.marker(
+                [-29.0, -61.0],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_4970875b8f2e4362bd6702fb70dbc053 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_e98b1fee492f41719c7a8e2714cbdb22.setIcon(custom_icon_4970875b8f2e4362bd6702fb70dbc053);
+        
+    
+        var popup_05a4c4f2bca94153bc10871936169dc6 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_1798271314e541feb79f614f274eabb9 = $(`<div id="html_1798271314e541feb79f614f274eabb9" style="width: 100.0%; height: 100.0%;">Focal Year: 1750<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_05a4c4f2bca94153bc10871936169dc6.setContent(html_1798271314e541feb79f614f274eabb9);
+        
+
+        marker_e98b1fee492f41719c7a8e2714cbdb22.bindPopup(popup_05a4c4f2bca94153bc10871936169dc6)
+        ;
+
+        
+    
+    
+            marker_e98b1fee492f41719c7a8e2714cbdb22.bindTooltip(
+                `<div>
+                     Abipón
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8362972f86c7426c9b437128762acd98 = L.marker(
+                [15.2534, -15.383],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_bcfe3383827c4265aed54de284dd7ab0 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_8362972f86c7426c9b437128762acd98.setIcon(custom_icon_bcfe3383827c4265aed54de284dd7ab0);
+        
+    
+        var popup_f884548dc0d94777bf565eac0d7dfd6d = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_dcfe17dfc1054ff3acc312b30db8d0ee = $(`<div id="html_dcfe17dfc1054ff3acc312b30db8d0ee" style="width: 100.0%; height: 100.0%;">Focal Year: 1950<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Large Game<br>Religion: 1 (deep Islamization)</div>`)[0];
+            popup_f884548dc0d94777bf565eac0d7dfd6d.setContent(html_dcfe17dfc1054ff3acc312b30db8d0ee);
+        
+
+        marker_8362972f86c7426c9b437128762acd98.bindPopup(popup_f884548dc0d94777bf565eac0d7dfd6d)
+        ;
+
+        
+    
+    
+            marker_8362972f86c7426c9b437128762acd98.bindTooltip(
+                `<div>
+                     Wolof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_406ce494c97f4c98b52cd99a36464a13 = L.marker(
+                [12.9, -7.65],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_f4f621980ff4417486fff6e013835354 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_406ce494c97f4c98b52cd99a36464a13.setIcon(custom_icon_f4f621980ff4417486fff6e013835354);
+        
+    
+        var popup_d9bf5da3f1d242668b05adbc392aa376 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_e8e8c74f7d5f45dea2beb8f9951dfbb0 = $(`<div id="html_e8e8c74f7d5f45dea2beb8f9951dfbb0" style="width: 100.0%; height: 100.0%;">Focal Year: 1902<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 3 (superficial Islamization)</div>`)[0];
+            popup_d9bf5da3f1d242668b05adbc392aa376.setContent(html_e8e8c74f7d5f45dea2beb8f9951dfbb0);
+        
+
+        marker_406ce494c97f4c98b52cd99a36464a13.bindPopup(popup_d9bf5da3f1d242668b05adbc392aa376)
+        ;
+
+        
+    
+    
+            marker_406ce494c97f4c98b52cd99a36464a13.bindTooltip(
+                `<div>
+                     Bambara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a96a0c3a682428a917499d8409f75af = L.marker(
+                [16.9634, -0.55187],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_7688aa4bd0ec49ad9ae0840541de49a4 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_5a96a0c3a682428a917499d8409f75af.setIcon(custom_icon_7688aa4bd0ec49ad9ae0840541de49a4);
+        
+    
+        var popup_3b5074618c5e4f93b2156273c0b1410a = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_b0d1be6dc4b3403f87847b493f9eac3d = $(`<div id="html_b0d1be6dc4b3403f87847b493f9eac3d" style="width: 100.0%; height: 100.0%;">Focal Year: 1940<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Large Game<br>Religion: 1 (deep Islamization)</div>`)[0];
+            popup_3b5074618c5e4f93b2156273c0b1410a.setContent(html_b0d1be6dc4b3403f87847b493f9eac3d);
+        
+
+        marker_5a96a0c3a682428a917499d8409f75af.bindPopup(popup_3b5074618c5e4f93b2156273c0b1410a)
+        ;
+
+        
+    
+    
+            marker_5a96a0c3a682428a917499d8409f75af.bindTooltip(
+                `<div>
+                     Songhai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a43c3ff66d534ce799a59095d498a17c = L.marker(
+                [10.0606, 15.4748],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_48ec7731417a45c89a665af4f7e17f0d = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_a43c3ff66d534ce799a59095d498a17c.setIcon(custom_icon_48ec7731417a45c89a665af4f7e17f0d);
+        
+    
+        var popup_ecabace4069a466a866caf8b230dc9ad = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_ec2bab70ab6e4ea1bd7e6a5e4916cfa4 = $(`<div id="html_ec2bab70ab6e4ea1bd7e6a5e4916cfa4" style="width: 100.0%; height: 100.0%;">Focal Year: 1910<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_ecabace4069a466a866caf8b230dc9ad.setContent(html_ec2bab70ab6e4ea1bd7e6a5e4916cfa4);
+        
+
+        marker_a43c3ff66d534ce799a59095d498a17c.bindPopup(popup_ecabace4069a466a866caf8b230dc9ad)
+        ;
+
+        
+    
+    
+            marker_a43c3ff66d534ce799a59095d498a17c.bindTooltip(
+                `<div>
+                     Masa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7959373654748a08b8f92f974526dd8 = L.marker(
+                [12.0455, 23.6401],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_e296041a78934b6c97de706d9e36594f = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_b7959373654748a08b8f92f974526dd8.setIcon(custom_icon_e296041a78934b6c97de706d9e36594f);
+        
+    
+        var popup_fa8a13823f774135aa882b3471fd7798 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_6ca6a8720bfa4a71b56ed9e3ca248551 = $(`<div id="html_6ca6a8720bfa4a71b56ed9e3ca248551" style="width: 100.0%; height: 100.0%;">Focal Year: 1880<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Large Game<br>Religion: 1 (deep Islamization)</div>`)[0];
+            popup_fa8a13823f774135aa882b3471fd7798.setContent(html_6ca6a8720bfa4a71b56ed9e3ca248551);
+        
+
+        marker_b7959373654748a08b8f92f974526dd8.bindPopup(popup_fa8a13823f774135aa882b3471fd7798)
+        ;
+
+        
+    
+    
+            marker_b7959373654748a08b8f92f974526dd8.bindTooltip(
+                `<div>
+                     Fur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e864746dad940d4a9f069e669f8dc6a = L.marker(
+                [9.85472, 31.7926],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_3076a9d21e57426c9d5d1cf32c5f1273 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_7e864746dad940d4a9f069e669f8dc6a.setIcon(custom_icon_3076a9d21e57426c9d5d1cf32c5f1273);
+        
+    
+        var popup_b9727b3249244f02a336e1ac70e86f5c = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_33b4d71c955c46e6a85557fb2a4b0d45 = $(`<div id="html_33b4d71c955c46e6a85557fb2a4b0d45" style="width: 100.0%; height: 100.0%;">Focal Year: 1910<br>Role of Gods: Otiose<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_b9727b3249244f02a336e1ac70e86f5c.setContent(html_33b4d71c955c46e6a85557fb2a4b0d45);
+        
+
+        marker_7e864746dad940d4a9f069e669f8dc6a.bindPopup(popup_b9727b3249244f02a336e1ac70e86f5c)
+        ;
+
+        
+    
+    
+            marker_7e864746dad940d4a9f069e669f8dc6a.bindTooltip(
+                `<div>
+                     Shilluk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c57053703fe647a1a5b9ff8d90485b22 = L.marker(
+                [7.34022, 36.1718],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_283042e8fded4f81b0f021eafb692ee6 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_c57053703fe647a1a5b9ff8d90485b22.setIcon(custom_icon_283042e8fded4f81b0f021eafb692ee6);
+        
+    
+        var popup_c08ce2bcd1e549cabb8dd709731d329b = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_78ab84e01f7948e493090fd5795512f9 = $(`<div id="html_78ab84e01f7948e493090fd5795512f9" style="width: 100.0%; height: 100.0%;">Focal Year: 1905<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 3 (superficial Islamization)</div>`)[0];
+            popup_c08ce2bcd1e549cabb8dd709731d329b.setContent(html_78ab84e01f7948e493090fd5795512f9);
+        
+
+        marker_c57053703fe647a1a5b9ff8d90485b22.bindPopup(popup_c08ce2bcd1e549cabb8dd709731d329b)
+        ;
+
+        
+    
+    
+            marker_c57053703fe647a1a5b9ff8d90485b22.bindTooltip(
+                `<div>
+                     Kafa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b285f6f989e4095af6d219a070fe625 = L.marker(
+                [5.39111, 37.53],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_a1ebfad843ee495fae082a2a13d11969 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_8b285f6f989e4095af6d219a070fe625.setIcon(custom_icon_a1ebfad843ee495fae082a2a13d11969);
+        
+    
+        var popup_7989c372b8bd40b2b239902b93d83fc9 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_fd79c672ecfe47d8b2c4d885005db396 = $(`<div id="html_fd79c672ecfe47d8b2c4d885005db396" style="width: 100.0%; height: 100.0%;">Focal Year: 1935<br>Role of Gods: Otiose<br>Animals Hunted: Large Game<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_7989c372b8bd40b2b239902b93d83fc9.setContent(html_fd79c672ecfe47d8b2c4d885005db396);
+        
+
+        marker_8b285f6f989e4095af6d219a070fe625.bindPopup(popup_7989c372b8bd40b2b239902b93d83fc9)
+        ;
+
+        
+    
+    
+            marker_8b285f6f989e4095af6d219a070fe625.bindTooltip(
+                `<div>
+                     Konso
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4015c3b90b5548fb9bbbb47c18a5d786 = L.marker(
+                [11.708182, 39.543456],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_48afee10239f4520a814808b781b86b9 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_4015c3b90b5548fb9bbbb47c18a5d786.setIcon(custom_icon_48afee10239f4520a814808b781b86b9);
+        
+    
+        var popup_c64c9626d97b4de7a36f62491f651f43 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_b360124bc12c4373992af4634c4dbc99 = $(`<div id="html_b360124bc12c4373992af4634c4dbc99" style="width: 100.0%; height: 100.0%;">Focal Year: 1953<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Large Game<br>Religion: 2 (deep Christianization)</div>`)[0];
+            popup_c64c9626d97b4de7a36f62491f651f43.setContent(html_b360124bc12c4373992af4634c4dbc99);
+        
+
+        marker_4015c3b90b5548fb9bbbb47c18a5d786.bindPopup(popup_c64c9626d97b4de7a36f62491f651f43)
+        ;
+
+        
+    
+    
+            marker_4015c3b90b5548fb9bbbb47c18a5d786.bindTooltip(
+                `<div>
+                     Amhara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35920fed48d74c92a950e64986516e3e = L.marker(
+                [15.7833, 38.3917],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_6ef668f0624d4e76a36c455c4c8e7404 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_35920fed48d74c92a950e64986516e3e.setIcon(custom_icon_6ef668f0624d4e76a36c455c4c8e7404);
+        
+    
+        var popup_8f5f619f678c4d19b1caa6f53298c130 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_45b959f4210e48449f573c5a994f6115 = $(`<div id="html_45b959f4210e48449f573c5a994f6115" style="width: 100.0%; height: 100.0%;">Focal Year: 1855<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Large Game<br>Religion: 4 (superficial Christianization)</div>`)[0];
+            popup_8f5f619f678c4d19b1caa6f53298c130.setContent(html_45b959f4210e48449f573c5a994f6115);
+        
+
+        marker_35920fed48d74c92a950e64986516e3e.bindPopup(popup_8f5f619f678c4d19b1caa6f53298c130)
+        ;
+
+        
+    
+    
+            marker_35920fed48d74c92a950e64986516e3e.bindTooltip(
+                `<div>
+                     Blin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a8146c2313840a597e6a2b65059bcfb = L.marker(
+                [-17.7052, 24.7398],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_a8de091facf444b3ae585788ab8e3874 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_1a8146c2313840a597e6a2b65059bcfb.setIcon(custom_icon_a8de091facf444b3ae585788ab8e3874);
+        
+    
+        var popup_381e7e0d16df4b5d89d80cbf145914eb = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_7f2abd3717e64bdab5edd862734fa8c1 = $(`<div id="html_7f2abd3717e64bdab5edd862734fa8c1" style="width: 100.0%; height: 100.0%;">Focal Year: 1900<br>Role of Gods: Otiose<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_381e7e0d16df4b5d89d80cbf145914eb.setContent(html_7f2abd3717e64bdab5edd862734fa8c1);
+        
+
+        marker_1a8146c2313840a597e6a2b65059bcfb.bindPopup(popup_381e7e0d16df4b5d89d80cbf145914eb)
+        ;
+
+        
+    
+    
+            marker_1a8146c2313840a597e6a2b65059bcfb.bindTooltip(
+                `<div>
+                     Lozi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c92295ae74354ea99d6812268369c23d = L.marker(
+                [34.916974, -3.430616],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_13d090b06d094daea1d5ec443c3221b9 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_c92295ae74354ea99d6812268369c23d.setIcon(custom_icon_13d090b06d094daea1d5ec443c3221b9);
+        
+    
+        var popup_c7b2fffe8c9d404da23077cd91e67b6f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_8a00e388d4074181a42fa9513bc0879a = $(`<div id="html_8a00e388d4074181a42fa9513bc0879a" style="width: 100.0%; height: 100.0%;">Focal Year: 1926<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Two or more of above<br>Religion: 1 (deep Islamization)</div>`)[0];
+            popup_c7b2fffe8c9d404da23077cd91e67b6f.setContent(html_8a00e388d4074181a42fa9513bc0879a);
+        
+
+        marker_c92295ae74354ea99d6812268369c23d.bindPopup(popup_c7b2fffe8c9d404da23077cd91e67b6f)
+        ;
+
+        
+    
+    
+            marker_c92295ae74354ea99d6812268369c23d.bindTooltip(
+                `<div>
+                     Riffians
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eafdd5d3d9544f2fb370b7564db7a1f3 = L.marker(
+                [33.1, 44.1],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_f059cbfdb9644203af0b3ea3fd4283f2 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_eafdd5d3d9544f2fb370b7564db7a1f3.setIcon(custom_icon_f059cbfdb9644203af0b3ea3fd4283f2);
+        
+    
+        var popup_0f500239b8ac4671ba7f4f86e5a541ac = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_b53b99a8ea4c4f8e9bc03145656901c2 = $(`<div id="html_b53b99a8ea4c4f8e9bc03145656901c2" style="width: 100.0%; height: 100.0%;">Focal Year: -1750<br>Role of Gods: Absent<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_0f500239b8ac4671ba7f4f86e5a541ac.setContent(html_b53b99a8ea4c4f8e9bc03145656901c2);
+        
+
+        marker_eafdd5d3d9544f2fb370b7564db7a1f3.bindPopup(popup_0f500239b8ac4671ba7f4f86e5a541ac)
+        ;
+
+        
+    
+    
+            marker_eafdd5d3d9544f2fb370b7564db7a1f3.bindTooltip(
+                `<div>
+                     Babylonians
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4056bb7876a94058958d4536829ad5c0 = L.marker(
+                [42.317, 21.3837],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_53f47d1094a4416c9ceb8e853f29130c = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_4056bb7876a94058958d4536829ad5c0.setIcon(custom_icon_53f47d1094a4416c9ceb8e853f29130c);
+        
+    
+        var popup_5f32413e633d48b099f27a82e68747d5 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_8461cbfa13614052be1cd6f8fb6a338e = $(`<div id="html_8461cbfa13614052be1cd6f8fb6a338e" style="width: 100.0%; height: 100.0%;">Focal Year: 1910<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Small Mammals<br>Religion: 1 (deep Islamization)</div>`)[0];
+            popup_5f32413e633d48b099f27a82e68747d5.setContent(html_8461cbfa13614052be1cd6f8fb6a338e);
+        
+
+        marker_4056bb7876a94058958d4536829ad5c0.bindPopup(popup_5f32413e633d48b099f27a82e68747d5)
+        ;
+
+        
+    
+    
+            marker_4056bb7876a94058958d4536829ad5c0.bindTooltip(
+                `<div>
+                     Gheg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88c1c98de19f4365ba8778e09ef18730 = L.marker(
+                [-12.4763, 14.4148],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_fbd99edb1d6046ea8f0b299d305eaea7 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_88c1c98de19f4365ba8778e09ef18730.setIcon(custom_icon_fbd99edb1d6046ea8f0b299d305eaea7);
+        
+    
+        var popup_b51c16b951a94085967b1caa1982fd8c = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_661bb54bc9204a67add3a807f8f390d5 = $(`<div id="html_661bb54bc9204a67add3a807f8f390d5" style="width: 100.0%; height: 100.0%;">Focal Year: 1890<br>Role of Gods: Otiose<br>Animals Hunted: Small Mammals<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_b51c16b951a94085967b1caa1982fd8c.setContent(html_661bb54bc9204a67add3a807f8f390d5);
+        
+
+        marker_88c1c98de19f4365ba8778e09ef18730.bindPopup(popup_b51c16b951a94085967b1caa1982fd8c)
+        ;
+
+        
+    
+    
+            marker_88c1c98de19f4365ba8778e09ef18730.bindTooltip(
+                `<div>
+                     Mbundu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85e0a200b57544429b150751ee3ab612 = L.marker(
+                [43.056218, 41.159115],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_03fa38a9927840ce933c1728eb322c6d = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_85e0a200b57544429b150751ee3ab612.setIcon(custom_icon_03fa38a9927840ce933c1728eb322c6d);
+        
+    
+        var popup_85d2316a58f4417e9770849a3d920573 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_bc279cf0b5044679b2098d52f03fc057 = $(`<div id="html_bc279cf0b5044679b2098d52f03fc057" style="width: 100.0%; height: 100.0%;">Focal Year: 1880<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Large Game<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_85d2316a58f4417e9770849a3d920573.setContent(html_bc279cf0b5044679b2098d52f03fc057);
+        
+
+        marker_85e0a200b57544429b150751ee3ab612.bindPopup(popup_85d2316a58f4417e9770849a3d920573)
+        ;
+
+        
+    
+    
+            marker_85e0a200b57544429b150751ee3ab612.bindTooltip(
+                `<div>
+                     Abkhaz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f0ff2eee7fb40ad81b5bc596bf8863e = L.marker(
+                [30.0948, 75.3474],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_8f357788c12f436f8790b4d845cbabd4 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_4f0ff2eee7fb40ad81b5bc596bf8863e.setIcon(custom_icon_8f357788c12f436f8790b4d845cbabd4);
+        
+    
+        var popup_5f0cb444645f4ca3ac3b3949890bf76b = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_6362032970874858acd182687c0e86e9 = $(`<div id="html_6362032970874858acd182687c0e86e9" style="width: 100.0%; height: 100.0%;">Focal Year: 1950<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Birds or Waterfowl<br>Religion: 1 (deep Islamization)</div>`)[0];
+            popup_5f0cb444645f4ca3ac3b3949890bf76b.setContent(html_6362032970874858acd182687c0e86e9);
+        
+
+        marker_4f0ff2eee7fb40ad81b5bc596bf8863e.bindPopup(popup_5f0cb444645f4ca3ac3b3949890bf76b)
+        ;
+
+        
+    
+    
+            marker_4f0ff2eee7fb40ad81b5bc596bf8863e.bindTooltip(
+                `<div>
+                     Punjabi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_618593d579e84bb797d4727cb3eed5ef = L.marker(
+                [19.7875, 79.9144],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_e32cd2e4326a47a5a2752dac87ba324b = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_618593d579e84bb797d4727cb3eed5ef.setIcon(custom_icon_e32cd2e4326a47a5a2752dac87ba324b);
+        
+    
+        var popup_1874087c029e468fb8d5a58f7f748e8f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_75ca8104ace34f2c948b615f9d482516 = $(`<div id="html_75ca8104ace34f2c948b615f9d482516" style="width: 100.0%; height: 100.0%;">Focal Year: 1938<br>Role of Gods: Active, but not supporting morality<br>Animals Hunted: Small Mammals<br>Religion: 8 (Hinduism)</div>`)[0];
+            popup_1874087c029e468fb8d5a58f7f748e8f.setContent(html_75ca8104ace34f2c948b615f9d482516);
+        
+
+        marker_618593d579e84bb797d4727cb3eed5ef.bindPopup(popup_1874087c029e468fb8d5a58f7f748e8f)
+        ;
+
+        
+    
+    
+            marker_618593d579e84bb797d4727cb3eed5ef.bindTooltip(
+                `<div>
+                     Madia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20a2fd723bf348b1a9482abfed3d8918 = L.marker(
+                [25.0317, 87.8185],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_e6e0ed17c2a0482eb9c11063e42ae887 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_20a2fd723bf348b1a9482abfed3d8918.setIcon(custom_icon_e6e0ed17c2a0482eb9c11063e42ae887);
+        
+    
+        var popup_ea34369a789446c0bf53d77276c4e57d = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_2b34ca450f1741b89d6a485bf1ac4628 = $(`<div id="html_2b34ca450f1741b89d6a485bf1ac4628" style="width: 100.0%; height: 100.0%;">Focal Year: 1940<br>Role of Gods: Otiose<br>Animals Hunted: Small Mammals<br>Religion: 8 (Hinduism)</div>`)[0];
+            popup_ea34369a789446c0bf53d77276c4e57d.setContent(html_2b34ca450f1741b89d6a485bf1ac4628);
+        
+
+        marker_20a2fd723bf348b1a9482abfed3d8918.bindPopup(popup_ea34369a789446c0bf53d77276c4e57d)
+        ;
+
+        
+    
+    
+            marker_20a2fd723bf348b1a9482abfed3d8918.bindTooltip(
+                `<div>
+                     Santal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_489d80e8d155475abd70a6f4bbd2cd3e = L.marker(
+                [41.8729, 65.7709],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_b233319655b6433da3bad05820f93260 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_489d80e8d155475abd70a6f4bbd2cd3e.setIcon(custom_icon_b233319655b6433da3bad05820f93260);
+        
+    
+        var popup_f9428118751b423a89fb7d4048043fb5 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_d6009100f0f3436ea1c1eb8cf53eb7b4 = $(`<div id="html_d6009100f0f3436ea1c1eb8cf53eb7b4" style="width: 100.0%; height: 100.0%;">Focal Year: 1885<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Small Mammals<br>Religion: 3 (superficial Islamization)</div>`)[0];
+            popup_f9428118751b423a89fb7d4048043fb5.setContent(html_d6009100f0f3436ea1c1eb8cf53eb7b4);
+        
+
+        marker_489d80e8d155475abd70a6f4bbd2cd3e.bindPopup(popup_f9428118751b423a89fb7d4048043fb5)
+        ;
+
+        
+    
+    
+            marker_489d80e8d155475abd70a6f4bbd2cd3e.bindTooltip(
+                `<div>
+                     Kazakh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d652b9a0e074e9c9a52a87b8ca11b4c = L.marker(
+                [27.0869, 88.5726],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_c96df3654b964b6aaeccf05aabd9bbb9 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_8d652b9a0e074e9c9a52a87b8ca11b4c.setIcon(custom_icon_c96df3654b964b6aaeccf05aabd9bbb9);
+        
+    
+        var popup_3b1c5aa3a24f4d9081662e9a5dc77d9c = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_e879b8c68a4142d9bcab0e584b73caee = $(`<div id="html_e879b8c68a4142d9bcab0e584b73caee" style="width: 100.0%; height: 100.0%;">Focal Year: 1937<br>Role of Gods: Active, but not supporting morality<br>Animals Hunted: Two or more of above<br>Religion: 7 (Vajrayana Buddhism)</div>`)[0];
+            popup_3b1c5aa3a24f4d9081662e9a5dc77d9c.setContent(html_e879b8c68a4142d9bcab0e584b73caee);
+        
+
+        marker_8d652b9a0e074e9c9a52a87b8ca11b4c.bindPopup(popup_3b1c5aa3a24f4d9081662e9a5dc77d9c)
+        ;
+
+        
+    
+    
+            marker_8d652b9a0e074e9c9a52a87b8ca11b4c.bindTooltip(
+                `<div>
+                     Lepcha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_457b447ae0244136a4a52681e10972d6 = L.marker(
+                [22.1138, 93.0387],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_c30f80cdd3e34372b26562a9ac83b3ab = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_457b447ae0244136a4a52681e10972d6.setIcon(custom_icon_c30f80cdd3e34372b26562a9ac83b3ab);
+        
+    
+        var popup_d48462246f3d4222af7af67491adefcc = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_019b0ba3282c49278f8970b8ed4ac4ed = $(`<div id="html_019b0ba3282c49278f8970b8ed4ac4ed" style="width: 100.0%; height: 100.0%;">Focal Year: 1930<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_d48462246f3d4222af7af67491adefcc.setContent(html_019b0ba3282c49278f8970b8ed4ac4ed);
+        
+
+        marker_457b447ae0244136a4a52681e10972d6.bindPopup(popup_d48462246f3d4222af7af67491adefcc)
+        ;
+
+        
+    
+    
+            marker_457b447ae0244136a4a52681e10972d6.bindTooltip(
+                `<div>
+                     Maras
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14982232f9f8465aa4e1c03457cf73b0 = L.marker(
+                [19.8829, 100.268],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_dc1df15665404ed488553f12d27afbe8 = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_14982232f9f8465aa4e1c03457cf73b0.setIcon(custom_icon_dc1df15665404ed488553f12d27afbe8);
+        
+    
+        var popup_6f97a81eba744570987b8cd3e34c34e9 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_eeaf2a2370414a3b9d44e15a1fdc9e25 = $(`<div id="html_eeaf2a2370414a3b9d44e15a1fdc9e25" style="width: 100.0%; height: 100.0%;">Focal Year: 1940<br>Role of Gods: Absent<br>Animals Hunted: Two or more of above<br>Religion: 0 (indigenous religion)</div>`)[0];
+            popup_6f97a81eba744570987b8cd3e34c34e9.setContent(html_eeaf2a2370414a3b9d44e15a1fdc9e25);
+        
+
+        marker_14982232f9f8465aa4e1c03457cf73b0.bindPopup(popup_6f97a81eba744570987b8cd3e34c34e9)
+        ;
+
+        
+    
+    
+            marker_14982232f9f8465aa4e1c03457cf73b0.bindTooltip(
+                `<div>
+                     Lamet
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5069ac8690744fe98a6f53630214362f = L.marker(
+                [2.66503, 102.291],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_4af2866e0c6f4ff880b35de1f1260c5e = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_5069ac8690744fe98a6f53630214362f.setIcon(custom_icon_4af2866e0c6f4ff880b35de1f1260c5e);
+        
+    
+        var popup_e408e5332a134fbba5e905d7e1b0c66f = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_fcc058e5ef4e4fee8e51ba35f4dc6b55 = $(`<div id="html_fcc058e5ef4e4fee8e51ba35f4dc6b55" style="width: 100.0%; height: 100.0%;">Focal Year: 1958<br>Role of Gods: Active, supporting morality<br>Animals Hunted: Small Mammals<br>Religion: 1 (deep Islamization)</div>`)[0];
+            popup_e408e5332a134fbba5e905d7e1b0c66f.setContent(html_fcc058e5ef4e4fee8e51ba35f4dc6b55);
+        
+
+        marker_5069ac8690744fe98a6f53630214362f.bindPopup(popup_e408e5332a134fbba5e905d7e1b0c66f)
+        ;
+
+        
+    
+    
+            marker_5069ac8690744fe98a6f53630214362f.bindTooltip(
+                `<div>
+                     Negri Sembilan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf3355c5331449aca0a7809ff5d85092 = L.marker(
+                [-8.35714, 115.075],
+                {}
+            ).addTo(map_ee365ae0243444999a0a6b649621f94b);
+        
+    
+        var custom_icon_c0ef860994a243fb9edb7f3ed74dca3b = L.icon({"iconSize": [30, 30], "iconUrl": "https://raw.githubusercontent.com/brandonrford/brandonrford.github.io/main/icons/cow.png"});
+        marker_bf3355c5331449aca0a7809ff5d85092.setIcon(custom_icon_c0ef860994a243fb9edb7f3ed74dca3b);
+        
+    
+        var popup_21e0b8bba3a44864835aa34dfd08db70 = L.popup({"maxWidth": 150, "minWidth": 150});
+
+        
+            var html_883ebfb30a9b4a14aa094dd3ef28668b = $(`<div id="html_883ebfb30a9b4a14aa094dd3ef28668b" style="width: 100.0%; height: 100.0%;">Focal Year: 1958<br>Role of Gods: Absent<br>Animals Hunted: Small Mammals<br>Religion: 8 (Hinduism)</div>`)[0];
+            popup_21e0b8bba3a44864835aa34dfd08db70.setContent(html_883ebfb30a9b4a14aa094dd3ef28668b);
+        
+
+        marker_bf3355c5331449aca0a7809ff5d85092.bindPopup(popup_21e0b8bba3a44864835aa34dfd08db70)
+        ;
+
+        
+    
+    
+            marker_bf3355c5331449aca0a7809ff5d85092.bindTooltip(
+                `<div>
+                     Balinese
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
