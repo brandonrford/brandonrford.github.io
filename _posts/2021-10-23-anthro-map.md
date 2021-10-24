@@ -7,7 +7,7 @@ feature-img: "assets/img/feature-img/cows.jpg"
 thumbnail: "assets/img/feature-img/cows.jpg"
 image: "assets/img/feature-img/cows.jpg"
 permalink: /mapping-primary-animals/
-description: "You always hear about the girls who are not like other girls, but what about the boys who are not like other boys?"
+description: "A map showcasing the primary domesticated anima of different societies and some additional information."
 excerpt_separator: <!--more-->
 ---
 
@@ -65,3 +65,19 @@ Glottolog Citation:
 > [https://doi.org/10.5281/zenodo.4761960](https://doi.org/10.5281/zenodo.4761960)
 >
 > (Available online at [http://glottolog.org](http://glottolog.org), Accessed on 2021-10-24.)
+
+Python Packages Used:
+
+Folium
+
+> [Folium](https://python-visualization.github.io/folium/)
+>
+> Licensed under an MIT License, copyright [Rob Story](https://github.com/wrobstory)
+
+Pandas
+
+> [Pandas](https://pandas.pydata.org)
+>
+> The pandas development team. *pandas-dev/pandas: Pandas*. Latest. Zenodo, Oct. 2021. 10.5281/zenodo.3509134. [https://doi.org/10.5281/zenodo.3509134](https://doi.org/10.5281/zenodo.3509134).
+>
+> [Data structures for statistical computing in python](https://conference.scipy.org/proceedings/scipy2010/pdfs/mckinney.pdf), McKinney, Proceedings of the 9th Python in Science Conference, Volume 445, 2010.
