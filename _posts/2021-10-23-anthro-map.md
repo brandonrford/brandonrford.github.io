@@ -28,6 +28,8 @@ Github Repo: [https://github.com/brandonrford/anthro_map](https://github.com/bra
 Attributions:
 
 * [The header image for this article](https://pixabay.com/photos/cows-cattle-grazing-mammals-203460/) was created by Pixabay user [Pixel-Sepp](https://pixabay.com/users/pixel-sepp-69900/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/).
+
+Map Icon Sources
 * [The chicken icon for the map](https://thenounproject.com/icon/3263718/) was created by [Symbolon](https://thenounproject.com/symbolon/) for [the Noun Project](https://thenounproject.com) and is licensed under a [Creative Commons 3.0 License](https://creativecommons.org/licenses/by/3.0/us/legalcode).
 * [The reindeer icon for the map](https://thenounproject.com/icon/1377398/) was created by [BomSymbols](https://thenounproject.com/korawan_m/) for [the Noun Project](https://thenounproject.com) and is licensed under a [Creative Commons 3.0 License](https://creativecommons.org/licenses/by/3.0/us/legalcode).
 * [The camel icon for the map](https://thenounproject.com/icon/4338923//) was created by [Doodle Icons](https://thenounproject.com/doodleicons/) for [the Noun Project](https://thenounproject.com) and is licensed under a [Creative Commons 3.0 License](https://creativecommons.org/licenses/by/3.0/us/legalcode).
@@ -35,6 +37,9 @@ Attributions:
 * [The cow icon for the map](https://thenounproject.com/icon/4340287/) was created by [KonKapp](https://thenounproject.com/konkapp/) for [the Noun Project](https://thenounproject.com) and is licensed under a [Creative Commons 3.0 License](https://creativecommons.org/licenses/by/3.0/us/legalcode).
 * [The horse icon for the map](https://thenounproject.com/icon/4340278/) was created by [KonKapp](https://thenounproject.com/konkapp/) for [the Noun Project](https://thenounproject.com) and is licensed under a [Creative Commons 3.0 License](https://creativecommons.org/licenses/by/3.0/us/legalcode).
 * [The pig icon for the map](https://thenounproject.com/icon/4340286/) was created by [KonKapp](https://thenounproject.com/konkapp/) for [the Noun Project](https://thenounproject.com) and is licensed under a [Creative Commons 3.0 License](https://creativecommons.org/licenses/by/3.0/us/legalcode).
+
+Data Sources:
+
 * All categorical data is from [D-Place](https://d-place.org), specific citations are below.
 * All location data is from [Glottolog](https://glottolog.org), specific citation is below.
 
