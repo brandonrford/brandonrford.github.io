@@ -40,12 +40,12 @@ Attributions:
 
 Data Citations:
 
-* [Murdock, G. P., & Morrow, D. O. (1970). Subsistence economy and supportive practices: Cross-cultural codes 1. Ethnology, 9(3), 302-330](https://d-place.org/parameters/SCCS6#2/14.3/151.2)
-* [Murdock, G. P., & Morrow, D. O. (1970). Subsistence economy and supportive practices: Cross-cultural codes 1. Ethnology, 9(3), 302-330](https://d-place.org/parameters/SCCS10#2/14.3/151.2)
-* [Rosenblatt, P. C., Walsh, R. P., & Jackson, D. A. (2011). Grief and mourning codes. World Cultures eJournal, 18(2)](https://d-place.org/parameters/SCCS2002#2/14.3/151.2)
+> [Murdock, G. P., & Morrow, D. O. (1970). Subsistence economy and supportive practices: Cross-cultural codes 1. Ethnology, 9(3), 302-330](https://d-place.org/parameters/SCCS6#2/14.3/151.2)
+> [Murdock, G. P., & Morrow, D. O. (1970). Subsistence economy and supportive practices: Cross-cultural codes 1. Ethnology, 9(3), 302-330](https://d-place.org/parameters/SCCS10#2/14.3/151.2)
+> [Rosenblatt, P. C., Walsh, R. P., & Jackson, D. A. (2011). Grief and mourning codes. World Cultures eJournal, 18(2)](https://d-place.org/parameters/SCCS2002#2/14.3/151.2)
 
-> Glottolog Citation:
->
+Glottolog Citation:
+
 > Hammarström, Harald & Forkel, Robert & Haspelmath, Martin & Bank, Sebastian. 2021.
 >
 > Glottolog 4.4.
