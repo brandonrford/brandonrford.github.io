@@ -13,6 +13,8 @@ excerpt_separator: <!--more-->
 
 I'm in college, and I'm currently taking an anthropology course. Now, this course isn't your standard anthropology course because it's focused heavily on the data science aspect of anthropology. This is something new to me. Before this year, I never tried out data science, but it was one taste and I was hooked. Now, I'm really delving into the code of it all, and I've refound my coding passion. So, over the next couple of months, I'll probably publish even more articles incorporating a mix of anthropology and data science, and I hope y'all enjoy that!
 
+<!--more-->
+
 Now for the main attraction. I've created a map of different societies and their primary domesticated animals. If you click the icon, you'll also see some other important information relevant to the things I'm studying (which I'll elucidate in further blog posts... hopefully).
 
 <iframe style="width:100%;height:750px;border:none;" src="../projects/anthro_map/mapa" title="Map of the primary domesticated animals of different societies."></iframe>
