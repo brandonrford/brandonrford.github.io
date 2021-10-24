@@ -12,15 +12,19 @@ Main Pages:
 
 * [About](/about/)
 
-* [Licenses](/license/)
-
 * [Search](/search/)
 
 * [Tags](/tags/)
 
+Other Pages:
+
 * [Privacy and Cookie Policy](/privacy/)
 
 * [Sitemap](/sitemap/) (you are here)
+
+* [Licenses](/license/)
+
+* [Domesticated Animal Map Permalink](https://brandonsvoid.com/projects/anthro_map/mapa)
 
 Blog Posts (chronological order):
 {% for post in site.posts reversed %}
