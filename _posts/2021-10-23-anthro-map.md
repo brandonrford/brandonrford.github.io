@@ -23,6 +23,8 @@ Dataset Permalink: [https://brandonsvoid.com/projects/anthro_map/map_data.csv](.
 
 Geojson Permalink: [https://brandonsvoid.com/projects/anthro_map/map_data.geojson](../projects/anthro_map/map_data.geojson)
 
+Github Repo: [https://github.com/brandonrford/anthro_map](https://github.com/brandonrford/anthro_map)
+
 Attributions:
 
 * [The header image for this article](https://pixabay.com/photos/cows-cattle-grazing-mammals-203460/) was created by Pixabay user [Pixel-Sepp](https://pixabay.com/users/pixel-sepp-69900/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/).
