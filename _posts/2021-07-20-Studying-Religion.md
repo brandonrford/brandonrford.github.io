@@ -6,7 +6,7 @@ author: brandon
 feature-img: "assets/img/feature-img/studying-religion.jpg"
 thumbnail: "assets/img/feature-img/studying-religion.jpg"
 image: "assets/img/feature-img/studying-religion.jpg"
-permalink: /studying-religion/
+permalink: /studying-religion
 description: "Religious studies is a wonderful field, and I think everyone should take at least one theology class."
 ---
 

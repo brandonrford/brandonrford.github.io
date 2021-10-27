@@ -6,7 +6,7 @@ author: brandon
 feature-img: "assets/img/feature-img/cows.jpg"
 thumbnail: "assets/img/feature-img/cows.jpg"
 image: "assets/img/feature-img/cows.jpg"
-permalink: /mapping-primary-animals/
+permalink: /mapping-primary-animals
 description: "A map showcasing the primary domesticated anima of different societies and some additional information."
 excerpt_separator: <!--more-->
 ---
@@ -21,13 +21,9 @@ Now for the main attraction. I've created a map of different societies and their
 
 Map Permalink: [https://brandonsvoid.com/projects/anthro_map/mapa](../projects/anthro_map/mapa)
 
-Dataset Permalink: [https://brandonsvoid.com/projects/anthro_map/map_data.csv](../projects/anthro_map/map_data.csv)
+Github Repo: <https://github.com/brandonrford/anthro_map>
 
-Geojson Permalink: [https://brandonsvoid.com/projects/anthro_map/map_data.geojson](../projects/anthro_map/map_data.geojson)
-
-Github Repo: [https://github.com/brandonrford/anthro_map](https://github.com/brandonrford/anthro_map)
-
-Attributions:
+Header Image:
 
 * [The header image for this article](https://pixabay.com/photos/cows-cattle-grazing-mammals-203460/) was created by Pixabay user [Pixel-Sepp](https://pixabay.com/users/pixel-sepp-69900/) and is licensed under the [Pixabay license](https://pixabay.com/service/license/).
 
@@ -52,6 +48,8 @@ Data Citations:
 >
 > [Murdock, G. P., & Morrow, D. O. (1970). Subsistence economy and supportive practices: Cross-cultural codes 1. Ethnology, 9(3), 302-330](https://d-place.org/parameters/SCCS10#2/14.3/151.2)
 >
+> [Murdock (1962-1971); Gray (1999)](https://d-place.org/parameters/SCCS238#2/14.3/150.1)
+>
 > [Rosenblatt, P. C., Walsh, R. P., & Jackson, D. A. (2011). Grief and mourning codes. World Cultures eJournal, 18(2)](https://d-place.org/parameters/SCCS2002#2/14.3/151.2)
 
 Glottolog Citation:
@@ -62,22 +60,28 @@ Glottolog Citation:
 >
 > Leipzig: Max Planck Institute for Evolutionary Anthropology.
 >
-> [https://doi.org/10.5281/zenodo.4761960](https://doi.org/10.5281/zenodo.4761960)
+> <https://doi.org/10.5281/zenodo.4761960>
 >
-> (Available online at [http://glottolog.org](http://glottolog.org), Accessed on 2021-10-24.)
+> (Available online at <http://glottolog.org>, Accessed on 2021-10-24.)
 
 Python Packages Used:
 
-Folium
+Folium (map tool)
 
 > [Folium](https://python-visualization.github.io/folium/)
 >
 > Licensed under an MIT License, copyright [Rob Story](https://github.com/wrobstory)
 
-Pandas
+Branca (legend tool)
+
+> [Branca](https://github.com/python-visualization/branca)
+>
+> Licensed under an MIT License, copyright [Martin Journois](https://github.com/BibMartin)
+
+Pandas (dataset wrangler)
 
 > [Pandas](https://pandas.pydata.org)
 >
-> The pandas development team. *pandas-dev/pandas: Pandas*. Latest. Zenodo, Oct. 2021. 10.5281/zenodo.3509134. [https://doi.org/10.5281/zenodo.3509134](https://doi.org/10.5281/zenodo.3509134).
+> The pandas development team. *pandas-dev/pandas: Pandas*. Latest. Zenodo, Oct. 2021. 10.5281/zenodo.3509134. <https://doi.org/10.5281/zenodo.3509134>.
 >
 > [Data structures for statistical computing in python](https://conference.scipy.org/proceedings/scipy2010/pdfs/mckinney.pdf), McKinney, Proceedings of the 9th Python in Science Conference, Volume 445, 2010.

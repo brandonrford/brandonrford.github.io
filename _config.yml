@@ -30,7 +30,7 @@ social:
 header_text: "Brandon's Void"  # Change Blog header text
 header_feature_image: assets/img/header.jpg
 footer_text: >
-  <a href="/licenses/">Copyright 2021 Brandon Ford</a>. Created using the <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a> theme. <a href="/sitemap/">Sitemap</a>. <a href="/privacy/">Privacy and Cookie Policy</a>.
+  <a href="/licenses">Copyright 2021 Brandon Ford</a>. Created using the <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a> theme. <a href="/sitemap">Sitemap</a>. <a href="/privacy">Privacy and Cookie Policy</a>.
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable

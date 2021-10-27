@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Privacy Policy and Cookie Policy"
-permalink: /privacy/
+permalink: /privacy
 hide: true
 date: 2021-07-12
 ---

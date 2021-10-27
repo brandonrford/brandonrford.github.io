@@ -6,7 +6,7 @@ author: brandon
 feature-img: "assets/img/feature-img/other-boys.jpg"
 thumbnail: "assets/img/feature-img/other-boys.jpg"
 image: "assets/img/feature-img/other-boys.jpg"
-permalink: /not-like-the-other-boys/
+permalink: /not-like-the-other-boys
 description: "You always hear about the girls who are not like other girls, but what about the boys who are not like other boys?"
 excerpt_separator: <!--more-->
 ---

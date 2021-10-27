@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Sitemap"
-permalink: /sitemap/
+permalink: /sitemap
 feature-img: "assets/img/map.jpg"
 hide: true
 ---
@@ -10,11 +10,11 @@ Main Pages:
 
 * [Home](/)
 
-* [About](/about/)
+* [About](/about)
 
-* [Search](/search/)
+* [Search](/search)
 
-* [Tags](/tags/)
+* [Tags](/tags)
 
 Other Pages:
 
@@ -25,6 +25,8 @@ Other Pages:
 * [Licenses](/license/)
 
 * [Domesticated Animal Map Permalink](https://brandonsvoid.com/projects/anthro_map/mapa)
+
+* [Clustering Map Permalink](https://brandonsvoid.com/projects/cluster_map/cluster_map)
 
 Blog Posts (chronological order):
 {% for post in site.posts reversed %}

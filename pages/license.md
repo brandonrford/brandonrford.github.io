@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Licenses and Copyright"
-permalink: /licenses/
+permalink: /licenses
 hide: true
 ---
 

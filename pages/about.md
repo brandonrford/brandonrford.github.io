@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 feature-img: "assets/img/about.jpg"
 image: "assets/img/about.jpg"
 description: "Here you can learn all about me!"

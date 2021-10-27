@@ -6,11 +6,11 @@ author: brandon
 feature-img: "assets/img/feature-img/creating-content.jpg"
 thumbnail: "assets/img/feature-img/creating-content.jpg"
 image: "assets/img/feature-img/creating-content.jpg"
-permalink: /on-creating-content/
+permalink: /on-creating-content
 description: "Why do I keep trying to create? This blog post is me trying to figure that out."
 ---
 
-I talked about this on my [About](/about/) page, but I also wanted to delve into this in my first post on this site. If you're visiting this blog and you know me, then you'll also know I've had many, MANY blogs before it. Well, that's a bit of an exaggeration, but I have tried maintaining a blog several times before this current one. I always fail, and I always end up going months and months between posts. Well, on this iteration of myself blogging, I'm considering that a-okay. I may upload multiple times a day or only a few times a year, and you know what? It doesn't really matter to me.
+I talked about this on my [About](/about) page, but I also wanted to delve into this in my first post on this site. If you're visiting this blog and you know me, then you'll also know I've had many, MANY blogs before it. Well, that's a bit of an exaggeration, but I have tried maintaining a blog several times before this current one. I always fail, and I always end up going months and months between posts. Well, on this iteration of myself blogging, I'm considering that a-okay. I may upload multiple times a day or only a few times a year, and you know what? It doesn't really matter to me.
 
 I am no longer constraining myself to anything except what my brain wants to write about. Basically, I'm pretending no one else is reading this except for me (and, to be honest, that's most likely the truth). The reason I say that is because I want this blog to be not a blog, but a journal. It's going to be where I write down my creative thoughts, and where I just flesh out ideas I have. It's going to be for me. If someone else happens to be reading it, then that's fantastic, but it's not meant for the reader. Basically, this is a private journal I'm letting everyone read. Not really private, but you know what I mean.
 
