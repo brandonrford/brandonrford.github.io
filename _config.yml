@@ -14,15 +14,14 @@ manifest: /manifest.json
 # Manifest
 
 #Jekyll SEO stuff
-twitter:
-  username: BrandonFordMO
-  card: summary
+#twitter:
+#  username: BrandonFordMO
+#  card: summary
 author: brandon
 logo: assets/img/moon_icon.webp 
 social: 
   name: Brandon Ford
   links:
-    - https://twitter.com/BrandonFordMO
     - https://www.linkedin.com/in/brandon-ford-1439a2207/
     - https://github.com/brandonrford
 
@@ -30,7 +29,7 @@ social:
 header_text: "Brandon's Void"  # Change Blog header text
 header_feature_image: assets/img/header.jpg
 footer_text: >
-  <a href="/licenses">Copyright 2021 Brandon Ford</a>. Created using the <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a> theme. <a href="/sitemap">Sitemap</a>. <a href="/privacy">Privacy and Cookie Policy</a>.
+  <a href="/licenses">Copyright 2023 Brandon Ford</a>. Created using the <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a> theme. <a href="/sitemap">Sitemap</a>.
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
@@ -41,8 +40,8 @@ post_navigation: true
 # For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
 katex:                                              # Enable if using math markup
 mermaid:                                            # Enable mermaid-js for sequence and diagrams
-google_analytics: G-WZ4J8H6Q3N                                      # Tracking ID, e.g. "UA-000000-01"
-cookie_consent: true                                   # To respect the usage of cookies
+google_analytics:                                       # Tracking ID, e.g. "UA-000000-01"
+cookie_consent: false                                   # To respect the usage of cookies
 color_theme: dark                                       # auto, dark or light
 
 # PAGINATION
