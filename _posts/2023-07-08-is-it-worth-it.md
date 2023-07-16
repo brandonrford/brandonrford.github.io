@@ -3,7 +3,7 @@ layout: post
 title: "Is it Worth It?"
 tags: [analysis,culture]
 author: brandon
-feature-img: "assets/img/feature-img/worhtit.jpg"
+feature-img: "assets/img/feature-img/worthit.jpg"
 thumbnail: "assets/img/feature-img/worthit.jpg"
 image: "assets/img/feature-img/worthit.jpg"
 permalink: /is-it-worth-it
