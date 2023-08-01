@@ -11,7 +11,7 @@ description: "Epistemology is a big word, but this post serves as a way for me t
 excerpt_separator: <!--more-->
 ---
 
-I'm writing this blog post on stolent land with a laptop that is almost certainly the product of the exploitation of labor (including the labor of children). In many ways, the modern ways of life are coming to eat us. Climate change is leading to parts of Earth becoming inhospitable (as I write this, 2023 is on track to be the hottest year every, and the past 3 days have been the record hottest days every recorded), the mines required to dig up rare earth minerals are poisoning the workers, and the Western lifestyle relies on slaves to make it possible. The people most responsible for climate change are the ones the most insualted from it. It's the global poor who make our shit that's going to face the brunt of the consequences.
+I'm writing this blog post on stolen land with a laptop that is almost certainly the product of the exploitation of labor (including the labor of children). In many ways, the modern ways of life are coming to eat us. Climate change is leading to parts of Earth becoming inhospitable (as I write this, 2023 is on track to be the hottest year every, and the past 3 days have been the record hottest days every recorded), the mines required to dig up rare earth minerals are poisoning the workers, and the Western lifestyle relies on slaves to make it possible. The people most responsible for climate change are the ones the most insualted from it. It's the global poor who make our shit that's going to face the brunt of the consequences.
 
 <!--more-->
 
