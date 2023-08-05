@@ -6,7 +6,7 @@ author: brandon
 feature-img: "assets/img/feature-img/higher_education.jpg"
 thumbnail: "assets/img/feature-img/higher_education.jpg"
 image: "assets/img/feature-img/higher_education.jpg"
-permalink: /is-it-worth-it
+permalink: /higher-education-reflection
 description: "I've graduated college, and I'm headed off to law school. I now wanna reflect on that and the broader state of higher education."
 excerpt_separator: <!--more-->
 ---
