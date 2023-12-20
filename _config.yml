@@ -1,11 +1,11 @@
 # SITE CONFIGURATION
 baseurl: "/"
-url: "https://brandonsvoid.com"
+url: "https://www.brandonsvoid.com"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Brandon's Void                                # site's title
 tagline: "Come on in"
-description: "This is my own personal void that I like screaming into. Visit if you'd like to listen in."      # used by search engines
+description: "This is my personal website. Here you will find information about me, what I do, and my career goals."      # used by search engines
 avatar: assets/img/moon_icon.webp                        # Empty for no avatar in navbar
 favicon: assets/img/icons/favicon.ico
 appleicon: assets/img/icons/appleicon.png
@@ -29,7 +29,7 @@ social:
 header_text: "Brandon's Void"  # Change Blog header text
 header_feature_image: assets/img/header.jpg
 footer_text: >
-  <a href="/licenses">Copyright 2023 Brandon Ford</a>. Created using the <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a> theme. <a href="/sitemap">Sitemap</a>.
+  <a href="/license">Copyright 2023 Brandon Ford</a>. Created using the <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a> theme. <a href="/sitemap">Sitemap</a>.
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
