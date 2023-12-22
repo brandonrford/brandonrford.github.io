@@ -2,7 +2,6 @@
     {% unless paginator.posts %}
     <article><section class="post-content"><p>There are no blog posts</p></section></article>
     {% endunless %}
-    <article><section class="post-content"><p>Hi, my name is Brandon. Below, you'll find musings on various topics. If you would like to learn more about me, <a href="/about">click here</a> or visit the about page.</p></section></article>
     {% for post in paginator.posts %}
     <div class="post-teaser">
         {% if post.thumbnail %}
